@@ -17,3 +17,8 @@ output/*
 !output/2023_fan_omml_page5.report.json
 !output/verification.json
 !output/test-results.txt
+
+!output/2023_fan_omml.docx
+!output/2023_fan_omml.report.txt
+!output/2023_fan_omml.report.json
+!output/regression-checks.json

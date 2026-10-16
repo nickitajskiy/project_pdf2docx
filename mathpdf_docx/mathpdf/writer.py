@@ -6,7 +6,7 @@ from docx.enum.text import WD_ALIGN_PARAGRAPH
 from docx.enum.section import WD_SECTION_START
 from docx.oxml import OxmlElement
 from docx.oxml.ns import qn
-from .omml import latex_to_omml
+from .omml import latex_to_omml, normalize_latex
 from .schema import Mode
 
 
@@ -64,6 +64,7 @@ def write_editable(paragraphs, output, mode, report, engine=None, pandoc=None):
                     try:
                         with Image.open(block.crop) as im:
                             block.latex=engine.recognize(im.convert('RGB'))
+                        block.latex_for_omml, block.latex_normalizations = normalize_latex(block.latex)
                         report.warn(block.page,'Распознанная формула требует сверки с оригиналом; синтаксис не доказывает правильность.')
                         paragraph._p.append(latex_to_omml(block.latex,pandoc))
                         block.method='omml_unverified'; report.omml+=1

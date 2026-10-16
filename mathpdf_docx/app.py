@@ -1,5 +1,6 @@
 from pathlib import Path
 import hashlib
+import json
 import os
 import tempfile
 import streamlit as st
@@ -40,6 +41,11 @@ if st.button('Конвертировать',type='primary',disabled=upload is No
 if 'conversion' in st.session_state and st.session_state.conversion[0]==key:
     result=st.session_state.conversion[1]
     st.success('DOCX создан. Проверьте формулы и структуру по оригиналу.')
+    if mode==Mode.OMML:
+        counts=json.loads(result.report_json)
+        st.write(f"Редактируемых формул Word: {counts['omml']}. Формул изображениями: {counts['formula_images']}.")
+        if counts['formula_images']:
+            st.warning('Часть формул осталась изображениями: причины указаны в отчёте. Эти формулы не редактируются как формулы Word.')
     st.download_button('Скачать DOCX',result.docx,'result.docx','application/vnd.openxmlformats-officedocument.wordprocessingml.document')
     st.download_button('Скачать понятный отчёт',result.report_text,'report.txt','text/plain; charset=utf-8')
     st.download_button('Скачать структуру блоков JSON',result.report_json,'blocks.json','application/json')

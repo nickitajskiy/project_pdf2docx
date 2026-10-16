@@ -21,6 +21,42 @@ def center_in(c, b):
     return b[0] <= (c['x0']+c['x1'])/2 <= b[2] and b[1] <= (c['top']+c['bottom'])/2 <= b[3]
 
 
+def complete_lower_scripts(chars, boxes):
+    """Включить пропущенные края нижних индексов, не удаляя одиночные знаки.
+
+    Детектор иногда обрезает начало [-1;1] слева от интеграла. Маленький
+    символ ниже основной строки связывается с ближайшей рамкой; расширение
+    ограничено одним основным кеглем, поэтому соседние строки не поглощаются.
+    """
+    body = median([c['size'] for c in chars if len(c['text']) == 1] or [12])
+    original = list(boxes)
+    completed = list(boxes)
+    for c in chars:
+        text = c['text']
+        if len(text) != 1 or not (.35*body <= c.get('size', body) <= .85*body):
+            continue
+        if not (text in '[](){}0123456789;:,+−-=∞' or
+                (text.isalpha() and not re.search('[а-яА-Я]', text))):
+            continue
+        # Уже принадлежащий формуле индекс нельзя присоединять к соседней
+        # рамке: иначе тесные строки списка соединятся в одно изображение.
+        if any(center_in(c, b) for b in original):
+            continue
+        candidates = []
+        for i, b in enumerate(original):
+            # Верхние отметки номера задачи и обычные буквы не являются пределом.
+            if c['top'] < b[1] + .4*body or c['bottom'] > b[3] + body:
+                continue
+            xgap = max(b[0]-c['x1'], c['x0']-b[2], 0)
+            ygap = max(b[1]-c['bottom'], c['top']-b[3], 0)
+            if xgap <= .75*body and ygap <= .6*body:
+                candidates.append((xgap+2*ygap+abs(c['bottom']-b[3]), i))
+        if candidates:
+            _, i = min(candidates)
+            completed[i] = union([completed[i], cb(c)])
+    return completed
+
+
 def prepare_regions(chars, detected, width, height, report, page):
     boxes = list(detected)
     # Пропуски Unicode и математические знаки — страховка к детектору, а не его замена.
@@ -29,6 +65,7 @@ def prepare_regions(chars, detected, width, height, report, page):
         if ('(cid:' in text or any(s in text for s in '∫∑∪∩√⩽⩾∈⊂⊃∞')) and not any(center_in(c,b) or overlap(cb(c),b) > 0 for b in boxes):
             boxes.append(cb(c))
             report.warn(page, f'Дополнительная область по символу {text!r}; проверьте границы вырезки.')
+    boxes = complete_lower_scripts(chars, boxes)
     out = []
     for b in boxes:
         if len(b)!=4 or b[2]<=b[0] or b[3]<=b[1]:

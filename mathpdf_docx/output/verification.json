@@ -62,17 +62,17 @@
   },
   "outputs": {
     "2023_fan_omml_page5.docx": {
-      "sha256": "ce5c6d9698e1fdfe5085869cb117464e56bf5d5667790c631dcf065516cd22ad",
+      "sha256": "bb8145082124ad1a067a1eec9547f9288d82481625a26f194fcba4dbf682cd45",
       "processed_pages": 1,
       "math_regions": 20,
-      "omml_counter": 17,
-      "omml_xml_nodes": 17,
-      "formula_images": 3,
+      "omml_counter": 19,
+      "omml_xml_nodes": 19,
+      "formula_images": 1,
       "page_images": 0,
-      "inline_shapes": 3,
+      "inline_shapes": 1,
       "superscript_runs": 7,
       "unmapped_cid_in_editable_text": false,
-      "warnings": 25
+      "warnings": 23
     },
     "2023_fan_pages.docx": {
       "sha256": "181aa3f0511dab2d068b4b6c43dc162890b2468ce9578ac415e06f3c5284f1f3",
@@ -88,7 +88,7 @@
       "warnings": 1
     },
     "2023_fan_editable.docx": {
-      "sha256": "77f5fce59d7a82e7603312840b26db186c26dc2d1a82bca132279e124ae885fe",
+      "sha256": "7916c7b01e7968cc63ec4635f2322a847b8b7d10edf35c0784635f92cf06f834",
       "processed_pages": 9,
       "math_regions": 244,
       "omml_counter": 0,
@@ -98,7 +98,20 @@
       "inline_shapes": 244,
       "superscript_runs": 30,
       "unmapped_cid_in_editable_text": false,
-      "warnings": 18
+      "warnings": 11
+    },
+    "2023_fan_omml.docx": {
+      "sha256": "6dbb4b1d4a1821bc1fef46a41a61a96ab5691c33ea80fbe8f6d4244f21988299",
+      "processed_pages": 9,
+      "math_regions": 244,
+      "omml_counter": 240,
+      "omml_xml_nodes": 240,
+      "formula_images": 4,
+      "page_images": 0,
+      "inline_shapes": 4,
+      "superscript_runs": 30,
+      "unmapped_cid_in_editable_text": false,
+      "warnings": 259
     }
   },
   "versions": {
@@ -119,13 +132,15 @@
   },
   "platform": "macOS-27.0-arm64-arm-64bit",
   "python": "3.12.14",
-  "tests": "21 passed",
+  "tests": "45 passed",
   "syntax_python_311": "compileall passed; full dependency/runtime tests not run under 3.11",
   "editable_rendered_pages": 11,
-  "omml_rendered_pages": 1,
+  "omml_rendered_pages": 10,
   "pages_rendered_pages": 9,
   "model_revisions": {
     "mfd-1.5": "f470a885e0fca1d3d2bfa2a54991db7ae01f1861",
     "mfr-1.5": "1cef9f0bdcd6a4c63df7de1311fb0894593340cc"
-  }
+  },
+  "omml_page5_rendered_pages": 1,
+  "regression_fixes": "output/regression-checks.json"
 }

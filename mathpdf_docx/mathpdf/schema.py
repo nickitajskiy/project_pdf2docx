@@ -17,6 +17,8 @@ class Block:
     kind: str
     text: str = ''
     latex: str = ''
+    latex_for_omml: str = ''
+    latex_normalizations: list[str] = field(default_factory=list)
     crop: str = ''
     method: str = ''
     warnings: list[str] = field(default_factory=list)
@@ -62,4 +64,7 @@ class Report:
         for b in self.blocks:
             if b.latex:
                 lines.append(f'Стр. {b.page}, {b.bbox}: непроверенный LaTeX: {b.latex} [{b.method}]')
+                if b.latex_normalizations:
+                    lines.append('  Для OMML: ' + b.latex_for_omml)
+                    lines.extend('  Совместимость: '+change for change in b.latex_normalizations)
         return '\n'.join(lines)

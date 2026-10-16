@@ -1,0 +1,60 @@
+{
+  "pages": 9,
+  "math_regions": 244,
+  "native_omml": 240,
+  "formula_images": 4,
+  "first_integral_domain": {
+    "source_page": 3,
+    "domain": "[-1;1]",
+    "inside_omml": true
+  },
+  "derivative_integral": {
+    "source_page": 4,
+    "fractions": 2,
+    "integrals": 2,
+    "images": 0
+  },
+  "continued_fractions": {
+    "source_page": 5,
+    "fractions": 6,
+    "nested_denominators": true,
+    "images": 0
+  },
+  "orphan_brackets": [],
+  "complete_matrix_rows": true,
+  "no_empty_script_or_operator_bodies": true,
+  "fallbacks": [
+    {
+      "page": 2,
+      "latex": "^ { c }",
+      "warnings": [
+        "Резервное изображение формулы: RuntimeError: В OMML получен индекс без основания; исходная формула сохранена изображением."
+      ]
+    },
+    {
+      "page": 4,
+      "latex": "^ { c }",
+      "warnings": [
+        "Резервное изображение формулы: RuntimeError: В OMML получен индекс без основания; исходная формула сохранена изображением."
+      ]
+    },
+    {
+      "page": 4,
+      "latex": "^ { [ 0 , 1 ] } ,",
+      "warnings": [
+        "Резервное изображение формулы: RuntimeError: В OMML получен индекс без основания; исходная формула сохранена изображением."
+      ]
+    },
+    {
+      "page": 5,
+      "latex": "\\l _ { p } , \\, p \\in [ 1 , + \\infty ) , \\, C [ a , b ]",
+      "warnings": [
+        "Резервное изображение формулы: RuntimeError: Pandoc отклонил формулу: [WARNING] Could not convert TeX math \\l _ { p } , \\, p \\in [ 1 , + \\infty ) , \\, C [ a , b ], rendering as TeX:\n  \\l _ { p } , \\, p \\in [ 1 , + \\infty ) ,\n     ^\n  unexpected control sequence \\l\n  expecting \"%\", \"\\\\label\", \"\\\\tag\", \"\\\\nonumber\", whitespace or \"\\\\allowbreak\"\n"
+      ]
+    }
+  ],
+  "ocr_formatting_replay": {
+    "exact_crop_matches": 244,
+    "description": "Full real MFD/MFR executed; subsequent formatting iterations reuse raw OCR only for byte-identical RGB crops."
+  }
+}
