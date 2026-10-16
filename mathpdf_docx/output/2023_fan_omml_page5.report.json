@@ -1,0 +1,4718 @@
+{
+  "mode": "Редактируемые формулы",
+  "pages": 1,
+  "math_regions": 20,
+  "omml": 17,
+  "formula_images": 3,
+  "page_images": 0,
+  "warnings": [
+    {
+      "page": 0,
+      "message": "Одна колонка: структура и границы формул восстановлены приближённо. Сверьте результат с PDF. Дефисы на переносах сохранены во избежание изменения выражений."
+    },
+    {
+      "page": 5,
+      "message": "Есть векторные линии/контуры. Внутри математических вырезок они сохранены; отдельные рисунки требуют проверки. Для точной сохранности выберите режим внешнего вида."
+    },
+    {
+      "page": 5,
+      "message": "Распознанная формула требует сверки с оригиналом; синтаксис не доказывает правильность."
+    },
+    {
+      "page": 5,
+      "message": "Распознанная формула требует сверки с оригиналом; синтаксис не доказывает правильность."
+    },
+    {
+      "page": 5,
+      "message": "Распознанная формула требует сверки с оригиналом; синтаксис не доказывает правильность."
+    },
+    {
+      "page": 5,
+      "message": "Распознанная формула требует сверки с оригиналом; синтаксис не доказывает правильность."
+    },
+    {
+      "page": 5,
+      "message": "Резервное изображение формулы: RuntimeError: Pandoc отклонил формулу: [WARNING] Could not convert TeX math \\l _ { p } , \\, p \\in [ 1 , + \\infty ) , \\, C [ a , b ], rendering as TeX:\n  \\l _ { p } , \\, p \\in [ 1 , + \\infty ) ,\n     ^\n  unexpected control sequence \\l\n  expecting \"%\", \"\\\\label\", \"\\\\tag\", \"\\\\nonumber\", whitespace or \"\\\\allowbreak\"\n"
+    },
+    {
+      "page": 5,
+      "message": "Распознанная формула требует сверки с оригиналом; синтаксис не доказывает правильность."
+    },
+    {
+      "page": 5,
+      "message": "Распознанная формула требует сверки с оригиналом; синтаксис не доказывает правильность."
+    },
+    {
+      "page": 5,
+      "message": "Распознанная формула требует сверки с оригиналом; синтаксис не доказывает правильность."
+    },
+    {
+      "page": 5,
+      "message": "Распознанная формула требует сверки с оригиналом; синтаксис не доказывает правильность."
+    },
+    {
+      "page": 5,
+      "message": "Распознанная формула требует сверки с оригиналом; синтаксис не доказывает правильность."
+    },
+    {
+      "page": 5,
+      "message": "Распознанная формула требует сверки с оригиналом; синтаксис не доказывает правильность."
+    },
+    {
+      "page": 5,
+      "message": "Распознанная формула требует сверки с оригиналом; синтаксис не доказывает правильность."
+    },
+    {
+      "page": 5,
+      "message": "Распознанная формула требует сверки с оригиналом; синтаксис не доказывает правильность."
+    },
+    {
+      "page": 5,
+      "message": "Распознанная формула требует сверки с оригиналом; синтаксис не доказывает правильность."
+    },
+    {
+      "page": 5,
+      "message": "Резервное изображение формулы: RuntimeError: Pandoc отклонил формулу: [WARNING] Could not convert TeX math t = \\cfrac { 1 + \\operatorname { s i n } { t } } { 2 } ., rendering as TeX:\n  t = \\cfrac { 1 + \\operatorname { s i n }\n             ^\n  unexpected control sequence \\cfrac\n  expecting \"%\", \"\\\\label\", \"\\\\tag\", \"\\\\nonumber\", whitespace or \"\\\\allowbreak\"\n"
+    },
+    {
+      "page": 5,
+      "message": "Распознанная формула требует сверки с оригиналом; синтаксис не доказывает правильность."
+    },
+    {
+      "page": 5,
+      "message": "Распознанная формула требует сверки с оригиналом; синтаксис не доказывает правильность."
+    },
+    {
+      "page": 5,
+      "message": "Распознанная формула требует сверки с оригиналом; синтаксис не доказывает правильность."
+    },
+    {
+      "page": 5,
+      "message": "Резервное изображение формулы: RuntimeError: Pandoc отклонил формулу: [WARNING] Could not convert TeX math 2 , \\: 2 + \\frac { 1 } { 2 } , \\: 2 + \\cfrac { 1 } { 2 + \\cfrac { 1 } { 2 } } , \\: 2 + \\cfrac { 1 } { 2 + \\cfrac { 1 } { 2 + \\cfrac { 1 } { 2 } } } , \\ldots, rendering as TeX:\n   } , \\: 2 + \\cfrac { 1 } { 2 + \\cfrac { \n                     ^\n  unexpected control sequence \\cfrac\n  expecting \"%\", \"\\\\label\", \"\\\\tag\", \"\\\\nonumber\", whitespace or \"\\\\allowbreak\"\n"
+    },
+    {
+      "page": 5,
+      "message": "Распознанная формула требует сверки с оригиналом; синтаксис не доказывает правильность."
+    },
+    {
+      "page": 5,
+      "message": "Распознанная формула требует сверки с оригиналом; синтаксис не доказывает правильность."
+    },
+    {
+      "page": 5,
+      "message": "Распознанная формула требует сверки с оригиналом; синтаксис не доказывает правильность."
+    },
+    {
+      "page": 5,
+      "message": "Распознанная формула требует сверки с оригиналом; синтаксис не доказывает правильность."
+    }
+  ],
+  "blocks": [
+    {
+      "page": 5,
+      "bbox": [
+        187.927,
+        68.66110880000008,
+        241.68236127999998,
+        80.61630880000007
+      ],
+      "kind": "text",
+      "text": "Семинар",
+      "latex": "",
+      "crop": "",
+      "method": "text_layer",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 11.95519999999999,
+      "bold": true
+    },
+    {
+      "page": 5,
+      "bbox": [
+        241.68236127999998,
+        68.66110880000008,
+        246.16556128000002,
+        80.61630880000007
+      ],
+      "kind": "text",
+      "text": " ",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        246.16556128000002,
+        68.66110880000008,
+        258.45670240000004,
+        80.61630880000007
+      ],
+      "kind": "text",
+      "text": "№",
+      "latex": "",
+      "crop": "",
+      "method": "text_layer",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 11.95519999999999,
+      "bold": true
+    },
+    {
+      "page": 5,
+      "bbox": [
+        258.45670240000004,
+        68.66110880000008,
+        262.9399024,
+        80.61630880000007
+      ],
+      "kind": "text",
+      "text": " ",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        262.9399024,
+        68.66110880000008,
+        269.66350688,
+        80.61630880000007
+      ],
+      "kind": "text",
+      "text": "6",
+      "latex": "",
+      "crop": "",
+      "method": "text_layer",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 11.95519999999999,
+      "bold": true
+    },
+    {
+      "page": 5,
+      "bbox": [
+        269.66350688,
+        68.66110880000008,
+        274.14670688,
+        80.61630880000007
+      ],
+      "kind": "text",
+      "text": " ",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        274.14670688,
+        68.66110880000008,
+        356.52759904000004,
+        80.61630880000007
+      ],
+      "kind": "text",
+      "text": "(контрольная",
+      "latex": "",
+      "crop": "",
+      "method": "text_layer",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 11.95519999999999,
+      "bold": true
+    },
+    {
+      "page": 5,
+      "bbox": [
+        356.52759904000004,
+        68.66110880000008,
+        361.01079904,
+        80.61630880000007
+      ],
+      "kind": "text",
+      "text": " ",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        361.01079904,
+        68.66110880000008,
+        406.20982368,
+        80.61630880000007
+      ],
+      "kind": "text",
+      "text": "работа)",
+      "latex": "",
+      "crop": "",
+      "method": "text_layer",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 11.95519999999999,
+      "bold": true
+    },
+    {
+      "page": 5,
+      "bbox": [
+        75.705,
+        95.66110880000008,
+        129.46036128,
+        107.61630880000007
+      ],
+      "kind": "text",
+      "text": "Семинар",
+      "latex": "",
+      "crop": "",
+      "method": "text_layer",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 11.95519999999999,
+      "bold": true
+    },
+    {
+      "page": 5,
+      "bbox": [
+        129.46036128,
+        95.66110880000008,
+        133.94356128,
+        107.61630880000007
+      ],
+      "kind": "text",
+      "text": " ",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        133.94356128,
+        95.66110880000008,
+        146.2347024,
+        107.61630880000007
+      ],
+      "kind": "text",
+      "text": "№",
+      "latex": "",
+      "crop": "",
+      "method": "text_layer",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 11.95519999999999,
+      "bold": true
+    },
+    {
+      "page": 5,
+      "bbox": [
+        146.2347024,
+        95.66110880000008,
+        150.7179024,
+        107.61630880000007
+      ],
+      "kind": "text",
+      "text": " ",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        150.7179024,
+        95.66110880000008,
+        157.44150688000002,
+        107.61630880000007
+      ],
+      "kind": "text",
+      "text": "7",
+      "latex": "",
+      "crop": "",
+      "method": "text_layer",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 11.95519999999999,
+      "bold": true
+    },
+    {
+      "page": 5,
+      "bbox": [
+        157.44150688000002,
+        95.66110880000008,
+        161.92470688000003,
+        107.61630880000007
+      ],
+      "kind": "text",
+      "text": " ",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        161.92470688000003,
+        95.66110880000008,
+        215.5389968,
+        107.61630880000007
+      ],
+      "kind": "text",
+      "text": "(полнота",
+      "latex": "",
+      "crop": "",
+      "method": "text_layer",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 11.95519999999999,
+      "bold": true
+    },
+    {
+      "page": 5,
+      "bbox": [
+        215.5389968,
+        95.66110880000008,
+        220.02219680000002,
+        107.61630880000007
+      ],
+      "kind": "text",
+      "text": " ",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        220.02219680000002,
+        95.66110880000008,
+        227.49180576,
+        107.61630880000007
+      ],
+      "kind": "text",
+      "text": "и",
+      "latex": "",
+      "crop": "",
+      "method": "text_layer",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 11.95519999999999,
+      "bold": true
+    },
+    {
+      "page": 5,
+      "bbox": [
+        227.49180576,
+        95.66110880000008,
+        231.97500576,
+        107.61630880000007
+      ],
+      "kind": "text",
+      "text": " ",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        231.97500576,
+        95.66110880000008,
+        332.4070544,
+        107.61630880000007
+      ],
+      "kind": "text",
+      "text": "сепарабельность",
+      "latex": "",
+      "crop": "",
+      "method": "text_layer",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 11.95519999999999,
+      "bold": true
+    },
+    {
+      "page": 5,
+      "bbox": [
+        332.4070544,
+        95.66110880000008,
+        336.8782992,
+        107.61630880000007
+      ],
+      "kind": "text",
+      "text": " ",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        336.8782992,
+        95.66110880000008,
+        434.18645408000015,
+        107.61630880000007
+      ],
+      "kind": "text",
+      "text": "нормированных",
+      "latex": "",
+      "crop": "",
+      "method": "text_layer",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 11.95519999999999,
+      "bold": true
+    },
+    {
+      "page": 5,
+      "bbox": [
+        434.18645408000015,
+        95.66110880000008,
+        438.66965408000016,
+        107.61630880000007
+      ],
+      "kind": "text",
+      "text": " ",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        438.66965408000016,
+        95.66110880000008,
+        518.4407260800002,
+        107.61630880000007
+      ],
+      "kind": "text",
+      "text": "пространств)",
+      "latex": "",
+      "crop": "",
+      "method": "text_layer",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 11.95519999999999,
+      "bold": true
+    },
+    {
+      "page": 5,
+      "bbox": [
+        59.512,
+        122.6601088000001,
+        66.23560448,
+        134.6153088000001
+      ],
+      "kind": "text",
+      "text": "1",
+      "latex": "",
+      "crop": "",
+      "method": "text_layer",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 11.95519999999999,
+      "bold": true
+    },
+    {
+      "page": 5,
+      "bbox": [
+        66.235,
+        121.53409940000006,
+        70.46951413,
+        129.50419940000006
+      ],
+      "kind": "text",
+      "text": "0",
+      "latex": "",
+      "crop": "",
+      "method": "text_layer",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": true,
+      "size": 7.970100000000002,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        70.967,
+        122.6601088000001,
+        74.70180447999999,
+        134.6153088000001
+      ],
+      "kind": "text",
+      "text": ".",
+      "latex": "",
+      "crop": "",
+      "method": "text_layer",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 11.95519999999999,
+      "bold": true
+    },
+    {
+      "page": 5,
+      "bbox": [
+        74.70180447999999,
+        121.53409940000006,
+        136.14218208,
+        134.6153088000001
+      ],
+      "kind": "text",
+      "text": " Докажите,",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        136.14218208,
+        121.53409940000006,
+        158.24495584,
+        134.6153088000001
+      ],
+      "kind": "text",
+      "text": " что",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        158.24495584,
+        121.53409940000006,
+        202.45408992,
+        134.6153088000001
+      ],
+      "kind": "text",
+      "text": " счётное",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        202.45408992,
+        121.53409940000006,
+        273.3304931200001,
+        134.6153088000001
+      ],
+      "kind": "text",
+      "text": " объединение",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        273.3304931200001,
+        121.53409940000006,
+        321.11542752000014,
+        134.6153088000001
+      ],
+      "kind": "text",
+      "text": " счётных",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        321.11542752000014,
+        121.53409940000006,
+        382.2351920000002,
+        134.6153088000001
+      ],
+      "kind": "text",
+      "text": " множество",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        382.2351920000002,
+        121.53409940000006,
+        424.4932374400002,
+        134.6153088000001
+      ],
+      "kind": "text",
+      "text": " счётно.",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        59.51199999999999,
+        142.7751088000001,
+        66.23560447999999,
+        154.7303088000001
+      ],
+      "kind": "text",
+      "text": "2",
+      "latex": "",
+      "crop": "",
+      "method": "text_layer",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 11.95519999999999,
+      "bold": true
+    },
+    {
+      "page": 5,
+      "bbox": [
+        66.235,
+        141.64909940000007,
+        70.46951413,
+        149.61919940000007
+      ],
+      "kind": "text",
+      "text": "0",
+      "latex": "",
+      "crop": "",
+      "method": "text_layer",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": true,
+      "size": 7.970100000000002,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        70.967,
+        142.7751088000001,
+        74.70180447999999,
+        154.7303088000001
+      ],
+      "kind": "text",
+      "text": ".",
+      "latex": "",
+      "crop": "",
+      "method": "text_layer",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 11.95519999999999,
+      "bold": true
+    },
+    {
+      "page": 5,
+      "bbox": [
+        74.70180447999999,
+        141.64909940000007,
+        136.14218208,
+        154.7303088000001
+      ],
+      "kind": "text",
+      "text": " Докажите,",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        136.14218208,
+        141.64909940000007,
+        158.24495584,
+        154.7303088000001
+      ],
+      "kind": "text",
+      "text": " что",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        158.24495584,
+        141.64909940000007,
+        215.78533344,
+        154.7303088000001
+      ],
+      "kind": "text",
+      "text": " декартово",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        215.78533344,
+        141.64909940000007,
+        291.2130812800001,
+        154.7303088000001
+      ],
+      "kind": "text",
+      "text": " произведение",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        291.2130812800001,
+        141.64909940000007,
+        348.7522633600002,
+        154.7303088000001
+      ],
+      "kind": "text",
+      "text": " конечного",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        348.7522633600002,
+        141.64909940000007,
+        383.20714976000016,
+        154.7303088000001
+      ],
+      "kind": "text",
+      "text": " числа",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        383.20714976000016,
+        141.64909940000007,
+        430.99208416000016,
+        154.7303088000001
+      ],
+      "kind": "text",
+      "text": " счётных",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        430.99208416000016,
+        141.64909940000007,
+        486.2597782400002,
+        154.7303088000001
+      ],
+      "kind": "text",
+      "text": " множеств",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        486.2597782400002,
+        141.64909940000007,
+        528.5297788800002,
+        154.7303088000001
+      ],
+      "kind": "text",
+      "text": " счётно.",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        59.51199999999999,
+        162.89010880000012,
+        69.97040895999999,
+        174.8453088000001
+      ],
+      "kind": "text",
+      "text": "3.",
+      "latex": "",
+      "crop": "",
+      "method": "text_layer",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 11.95519999999999,
+      "bold": true
+    },
+    {
+      "page": 5,
+      "bbox": [
+        69.97040895999999,
+        162.1429092689931,
+        131.41018208,
+        178.31750987508235
+      ],
+      "kind": "text",
+      "text": " Докажите,",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        131.41018208,
+        162.1429092689931,
+        153.51295584000002,
+        178.31750987508235
+      ],
+      "kind": "text",
+      "text": " что",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        153.51295584000002,
+        162.1429092689931,
+        209.75141216000003,
+        178.31750987508235
+      ],
+      "kind": "text",
+      "text": " мощность",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        209.75141216000003,
+        162.1429092689931,
+        279.3294806400001,
+        178.31750987508235
+      ],
+      "kind": "text",
+      "text": " пространств",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        281.05211913775435,
+        162.72560697904393,
+        294.72361888000006,
+        178.13442832747435
+      ],
+      "kind": "math",
+      "text": "",
+      "latex": "l _ { p } ,",
+      "crop": "p5-math1.png",
+      "method": "omml_unverified",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        294.72361888000006,
+        162.1429092689931,
+        296.5573599802937,
+        178.31750987508235
+      ],
+      "kind": "text",
+      "text": " ",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        296.5573599802937,
+        162.1429092689931,
+        332.78194860621124,
+        178.31750987508235
+      ],
+      "kind": "math",
+      "text": "",
+      "latex": "C [ a , b ]",
+      "crop": "p5-math0.png",
+      "method": "omml_unverified",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        332.78194860621124,
+        162.1429092689931,
+        344.05687072000006,
+        178.31750987508235
+      ],
+      "kind": "text",
+      "text": " —",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        344.05687072000006,
+        162.1429092689931,
+        408.7476534400001,
+        178.31750987508235
+      ],
+      "kind": "text",
+      "text": " континуум.",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        59.51200000000006,
+        183.00510880000013,
+        69.97040896000006,
+        194.96030880000012
+      ],
+      "kind": "text",
+      "text": "4.",
+      "latex": "",
+      "crop": "",
+      "method": "text_layer",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 11.95519999999999,
+      "bold": true
+    },
+    {
+      "page": 5,
+      "bbox": [
+        69.97040896000006,
+        183.00510880000013,
+        131.41018208000006,
+        194.96030880000012
+      ],
+      "kind": "text",
+      "text": " Докажите,",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        131.41018208000006,
+        183.00510880000013,
+        152.23374944000005,
+        194.96030880000012
+      ],
+      "kind": "text",
+      "text": " что",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        152.23374944000005,
+        183.00510880000013,
+        208.48296544000004,
+        194.96030880000012
+      ],
+      "kind": "text",
+      "text": " декартово",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        208.48296544000004,
+        183.00510880000013,
+        282.61955168000014,
+        194.96030880000012
+      ],
+      "kind": "text",
+      "text": " произведение",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        282.61955168000014,
+        183.00510880000013,
+        331.40154976000025,
+        194.96030880000012
+      ],
+      "kind": "text",
+      "text": " счётного",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        331.40154976000025,
+        183.00510880000013,
+        364.56527456000015,
+        194.96030880000012
+      ],
+      "kind": "text",
+      "text": " числа",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        364.56527456000015,
+        183.00510880000013,
+        418.5489801600001,
+        194.96030880000012
+      ],
+      "kind": "text",
+      "text": " конечных",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        418.5489801600001,
+        183.00510880000013,
+        472.5255126400001,
+        194.96030880000012
+      ],
+      "kind": "text",
+      "text": " множеств",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        472.5255126400001,
+        183.00510880000013,
+        552.1937699200001,
+        194.96030880000012
+      ],
+      "kind": "text",
+      "text": " континуально.",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        59.51200000000005,
+        203.12010880000014,
+        66.23560448000005,
+        215.07530880000013
+      ],
+      "kind": "text",
+      "text": "5",
+      "latex": "",
+      "crop": "",
+      "method": "text_layer",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 11.95519999999999,
+      "bold": true
+    },
+    {
+      "page": 5,
+      "bbox": [
+        66.23500000000006,
+        201.9940994000001,
+        70.46951413000005,
+        209.9641994000001
+      ],
+      "kind": "text",
+      "text": "0",
+      "latex": "",
+      "crop": "",
+      "method": "text_layer",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": true,
+      "size": 7.970100000000002,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        70.96700000000006,
+        203.12010880000014,
+        74.70180448000005,
+        215.07530880000013
+      ],
+      "kind": "text",
+      "text": ".",
+      "latex": "",
+      "crop": "",
+      "method": "text_layer",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 11.95519999999999,
+      "bold": true
+    },
+    {
+      "page": 5,
+      "bbox": [
+        74.70180448000005,
+        201.85878939159693,
+        136.14218208000005,
+        219.85520880000013
+      ],
+      "kind": "text",
+      "text": " Докажите,",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        136.14218208000005,
+        201.85878939159693,
+        158.24495584000005,
+        219.85520880000013
+      ],
+      "kind": "text",
+      "text": " что",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        158.24495584000005,
+        201.85878939159693,
+        233.66313952000007,
+        219.85520880000013
+      ],
+      "kind": "text",
+      "text": " пространство",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        233.66313952000007,
+        201.85878939159693,
+        235.5789597710655,
+        219.85520880000013
+      ],
+      "kind": "text",
+      "text": " ",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        235.5789597710655,
+        201.85878939159693,
+        321.3886188800001,
+        219.85520880000013
+      ],
+      "kind": "math",
+      "text": "",
+      "latex": "\\mathbb { R } _ { p } ^ { n } , \\, p \\in [ 1 , + \\infty ] ,",
+      "crop": "p5-math2.png",
+      "method": "omml_unverified",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        321.3886188800001,
+        201.85878939159693,
+        372.59154496000014,
+        219.85520880000013
+      ],
+      "kind": "text",
+      "text": " является",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        372.59154496000014,
+        201.85878939159693,
+        418.0990137600001,
+        219.85520880000013
+      ],
+      "kind": "text",
+      "text": " полным",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        418.0990137600001,
+        201.85878939159693,
+        428.50960192,
+        219.85520880000013
+      ],
+      "kind": "text",
+      "text": " и",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        428.50960192,
+        201.85878939159693,
+        516.9302611200002,
+        219.85520880000013
+      ],
+      "kind": "text",
+      "text": " сепарабельным.",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        59.512000000000114,
+        223.23510880000015,
+        69.97040896000011,
+        235.19030880000014
+      ],
+      "kind": "text",
+      "text": "6.",
+      "latex": "",
+      "crop": "",
+      "method": "text_layer",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 11.95519999999999,
+      "bold": true
+    },
+    {
+      "page": 5,
+      "bbox": [
+        69.97040896000011,
+        222.2266319053813,
+        131.4101820800001,
+        238.81926871184217
+      ],
+      "kind": "text",
+      "text": " Докажите,",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        131.4101820800001,
+        222.2266319053813,
+        152.64022624000012,
+        238.81926871184217
+      ],
+      "kind": "text",
+      "text": " что",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        152.64022624000012,
+        222.2266319053813,
+        227.18568032000013,
+        238.81926871184217
+      ],
+      "kind": "text",
+      "text": " пространства",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        228.08767689095524,
+        222.2266319053813,
+        345.2884955171625,
+        238.81926871184217
+      ],
+      "kind": "math",
+      "text": "",
+      "latex": "\\l _ { p } , \\, p \\in [ 1 , + \\infty ) , \\, C [ a , b ]",
+      "crop": "p5-math3.png",
+      "method": "formula_image",
+      "warnings": [
+        "Резервное изображение формулы: RuntimeError: Pandoc отклонил формулу: [WARNING] Could not convert TeX math \\l _ { p } , \\, p \\in [ 1 , + \\infty ) , \\, C [ a , b ], rendering as TeX:\n  \\l _ { p } , \\, p \\in [ 1 , + \\infty ) ,\n     ^\n  unexpected control sequence \\l\n  expecting \"%\", \"\\\\label\", \"\\\\tag\", \"\\\\nonumber\", whitespace or \"\\\\allowbreak\"\n"
+      ],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        346.5930000000001,
+        223.23510880000015,
+        397.4743312000001,
+        235.19030880000014
+      ],
+      "kind": "text",
+      "text": "являются",
+      "latex": "",
+      "crop": "",
+      "method": "text_layer",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 11.95519999999999,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        397.4743312000001,
+        222.2266319053813,
+        448.61030816000005,
+        238.81926871184217
+      ],
+      "kind": "text",
+      "text": " полными",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        448.61030816000005,
+        222.2266319053813,
+        458.1362115200001,
+        238.81926871184217
+      ],
+      "kind": "text",
+      "text": " и",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        458.1362115200001,
+        222.2266319053813,
+        552.1853788800001,
+        238.81926871184217
+      ],
+      "kind": "text",
+      "text": " сепарабельными,",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        59.51200000000006,
+        243.35110880000013,
+        69.97040896000006,
+        255.30630880000012
+      ],
+      "kind": "text",
+      "text": "7.",
+      "latex": "",
+      "crop": "",
+      "method": "text_layer",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 11.95519999999999,
+      "bold": true
+    },
+    {
+      "page": 5,
+      "bbox": [
+        69.97040896000006,
+        243.10018633844734,
+        131.41018208000006,
+        257.3568246517952
+      ],
+      "kind": "text",
+      "text": " Докажите,",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        131.41018208000006,
+        243.10018633844734,
+        153.51295584000007,
+        257.3568246517952
+      ],
+      "kind": "text",
+      "text": " что",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        153.51295584000007,
+        243.10018633844734,
+        228.9311395200001,
+        257.3568246517952
+      ],
+      "kind": "text",
+      "text": " пространство",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        230.28169978836587,
+        243.10018633844734,
+        247.3764373620728,
+        257.3568246517952
+      ],
+      "kind": "math",
+      "text": "",
+      "latex": "l _ { \\infty }",
+      "crop": "p5-math4.png",
+      "method": "omml_unverified",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        247.3764373620728,
+        243.10018633844734,
+        288.85118048000004,
+        257.3568246517952
+      ],
+      "kind": "text",
+      "text": " полное,",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        288.85118048000004,
+        243.10018633844734,
+        305.10188384,
+        257.3568246517952
+      ],
+      "kind": "text",
+      "text": " но",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        305.10188384,
+        243.10018633844734,
+        320.7141795200001,
+        257.3568246517952
+      ],
+      "kind": "text",
+      "text": " не",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        320.7141795200001,
+        243.10018633844734,
+        403.9343267200001,
+        257.3568246517952
+      ],
+      "kind": "text",
+      "text": " сепарабельное.",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        59.51200000000006,
+        263.46610880000014,
+        69.97040896000006,
+        275.42130880000013
+      ],
+      "kind": "text",
+      "text": "8.",
+      "latex": "",
+      "crop": "",
+      "method": "text_layer",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 11.95519999999999,
+      "bold": true
+    },
+    {
+      "page": 5,
+      "bbox": [
+        69.97040896000006,
+        262.233855797412,
+        131.41018208000006,
+        278.44773756666024
+      ],
+      "kind": "text",
+      "text": " Докажите,",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        131.41018208000006,
+        262.233855797412,
+        153.51295584000007,
+        278.44773756666024
+      ],
+      "kind": "text",
+      "text": " что",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        153.51295584000007,
+        262.233855797412,
+        228.9311395200001,
+        278.44773756666024
+      ],
+      "kind": "text",
+      "text": " пространство",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        228.9311395200001,
+        262.233855797412,
+        277.37839200000013,
+        278.44773756666024
+      ],
+      "kind": "text",
+      "text": " простых",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        277.37839200000013,
+        262.233855797412,
+        329.06191712000015,
+        278.44773756666024
+      ],
+      "kind": "text",
+      "text": " функций",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        329.06191712000015,
+        262.233855797412,
+        342.7123644800002,
+        278.44773756666024
+      ],
+      "kind": "text",
+      "text": " (с",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        342.7123644800002,
+        262.233855797412,
+        385.63153248000015,
+        278.44773756666024
+      ],
+      "kind": "text",
+      "text": " нормой",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        385.63153248000015,
+        262.233855797412,
+        387.6335083316747,
+        278.44773756666024
+      ],
+      "kind": "text",
+      "text": " ",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        387.6335083316747,
+        262.233855797412,
+        431.2804574394268,
+        278.44773756666024
+      ],
+      "kind": "math",
+      "text": "",
+      "latex": "L _ { 1 } [ a , b ] )",
+      "crop": "p5-math5.png",
+      "method": "omml_unverified",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        431.2804574394268,
+        262.233855797412,
+        445.2476851200001,
+        278.44773756666024
+      ],
+      "kind": "text",
+      "text": " не",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        445.2476851200001,
+        262.233855797412,
+        496.4506112000001,
+        278.44773756666024
+      ],
+      "kind": "text",
+      "text": " является",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        496.4506112000001,
+        262.233855797412,
+        545.22065408,
+        278.44773756666024
+      ],
+      "kind": "text",
+      "text": " полным.",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        59.51200000000006,
+        283.58110880000015,
+        66.23560448000006,
+        295.53630880000014
+      ],
+      "kind": "text",
+      "text": "9",
+      "latex": "",
+      "crop": "",
+      "method": "text_layer",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 11.95519999999999,
+      "bold": true
+    },
+    {
+      "page": 5,
+      "bbox": [
+        66.23500000000006,
+        282.4540994,
+        70.46951413000005,
+        290.4241994
+      ],
+      "kind": "text",
+      "text": "∗",
+      "latex": "",
+      "crop": "",
+      "method": "text_layer",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": true,
+      "size": 7.970100000000002,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        70.96700000000006,
+        283.58110880000015,
+        74.70180448000005,
+        295.53630880000014
+      ],
+      "kind": "text",
+      "text": ".",
+      "latex": "",
+      "crop": "",
+      "method": "text_layer",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 11.95519999999999,
+      "bold": true
+    },
+    {
+      "page": 5,
+      "bbox": [
+        74.70180448000005,
+        282.4540994,
+        136.14218208000005,
+        299.1005566804936
+      ],
+      "kind": "text",
+      "text": " Докажите,",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        136.14218208000005,
+        282.4540994,
+        157.03748064000007,
+        299.1005566804936
+      ],
+      "kind": "text",
+      "text": " что",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        157.03748064000007,
+        282.4540994,
+        231.23623392000007,
+        299.1005566804936
+      ],
+      "kind": "text",
+      "text": " пространство",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        232.1738922184755,
+        282.7260310244164,
+        339.1536188800002,
+        299.1005566804936
+      ],
+      "kind": "math",
+      "text": "",
+      "latex": "L _ { p } [ a , b ] , p \\in [ 1 , + \\infty ) ,",
+      "crop": "p5-math6.png",
+      "method": "omml_unverified",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        339.1536188800002,
+        282.4540994,
+        378.25310048000017,
+        299.1005566804936
+      ],
+      "kind": "text",
+      "text": " полное",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        378.25310048000017,
+        282.4540994,
+        387.4323030400002,
+        299.1005566804936
+      ],
+      "kind": "text",
+      "text": " и",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        387.4323030400002,
+        282.4540994,
+        469.4449750400002,
+        299.1005566804936
+      ],
+      "kind": "text",
+      "text": " сепарабельное,",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        469.4449750400002,
+        282.4540994,
+        477.9869654400002,
+        299.1005566804936
+      ],
+      "kind": "text",
+      "text": " а",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        477.9869654400002,
+        282.4540994,
+        552.1857187200003,
+        299.1005566804936
+      ],
+      "kind": "text",
+      "text": " пространство",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        40.283412954332576,
+        296.8779702033906,
+        83.78789429770337,
+        313.2457421846005
+      ],
+      "kind": "math",
+      "text": "",
+      "latex": "L _ { \\infty } [ a , b ]",
+      "crop": "p5-math7.png",
+      "method": "omml_unverified",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        83.78789429770337,
+        296.8779702033906,
+        125.31518048000022,
+        313.2457421846005
+      ],
+      "kind": "text",
+      "text": " полное,",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        125.31518048000022,
+        296.8779702033906,
+        141.5658838400002,
+        313.2457421846005
+      ],
+      "kind": "text",
+      "text": " но",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        141.5658838400002,
+        296.8779702033906,
+        157.17817952000024,
+        313.2457421846005
+      ],
+      "kind": "text",
+      "text": " не",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        157.17817952000024,
+        296.8779702033906,
+        242.99858272000023,
+        313.2457421846005
+      ],
+      "kind": "text",
+      "text": " сепарабельные.",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        86.54800000000021,
+        325.0261088000002,
+        140.30336128000022,
+        336.98130880000014
+      ],
+      "kind": "text",
+      "text": "Семинар",
+      "latex": "",
+      "crop": "",
+      "method": "text_layer",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 11.955199999999934,
+      "bold": true
+    },
+    {
+      "page": 5,
+      "bbox": [
+        140.30336128000022,
+        325.0261088000002,
+        144.78656128000023,
+        336.98130880000014
+      ],
+      "kind": "text",
+      "text": " ",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        144.78656128000023,
+        325.0261088000002,
+        157.07770240000022,
+        336.98130880000014
+      ],
+      "kind": "text",
+      "text": "№",
+      "latex": "",
+      "crop": "",
+      "method": "text_layer",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 11.955199999999934,
+      "bold": true
+    },
+    {
+      "page": 5,
+      "bbox": [
+        157.07770240000022,
+        325.0261088000002,
+        161.56090240000023,
+        336.98130880000014
+      ],
+      "kind": "text",
+      "text": " ",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        161.56090240000023,
+        325.0261088000002,
+        168.28450688000024,
+        336.98130880000014
+      ],
+      "kind": "text",
+      "text": "8",
+      "latex": "",
+      "crop": "",
+      "method": "text_layer",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 11.955199999999934,
+      "bold": true
+    },
+    {
+      "page": 5,
+      "bbox": [
+        168.28450688000024,
+        325.0261088000002,
+        172.76770688000022,
+        336.98130880000014
+      ],
+      "kind": "text",
+      "text": " ",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        172.76770688000022,
+        325.0261088000002,
+        230.2841740800002,
+        336.98130880000014
+      ],
+      "kind": "text",
+      "text": "(принцип",
+      "latex": "",
+      "crop": "",
+      "method": "text_layer",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 11.955199999999934,
+      "bold": true
+    },
+    {
+      "page": 5,
+      "bbox": [
+        230.2841740800002,
+        325.0261088000002,
+        234.7673740800002,
+        336.98130880000014
+      ],
+      "kind": "text",
+      "text": " ",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        234.7673740800002,
+        325.0261088000002,
+        310.2106636800002,
+        336.98130880000014
+      ],
+      "kind": "text",
+      "text": "сжимающих",
+      "latex": "",
+      "crop": "",
+      "method": "text_layer",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 11.955199999999934,
+      "bold": true
+    },
+    {
+      "page": 5,
+      "bbox": [
+        310.2106636800002,
+        325.0261088000002,
+        314.6938636800002,
+        336.98130880000014
+      ],
+      "kind": "text",
+      "text": " ",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        314.6938636800002,
+        325.0261088000002,
+        394.6131801600003,
+        336.98130880000014
+      ],
+      "kind": "text",
+      "text": "отображений",
+      "latex": "",
+      "crop": "",
+      "method": "text_layer",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 11.955199999999934,
+      "bold": true
+    },
+    {
+      "page": 5,
+      "bbox": [
+        394.6131801600003,
+        325.0261088000002,
+        399.0963801600003,
+        336.98130880000014
+      ],
+      "kind": "text",
+      "text": " ",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        399.0963801600003,
+        325.0261088000002,
+        405.8199846400003,
+        336.98130880000014
+      ],
+      "kind": "text",
+      "text": "в",
+      "latex": "",
+      "crop": "",
+      "method": "text_layer",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 11.955199999999934,
+      "bold": true
+    },
+    {
+      "page": 5,
+      "bbox": [
+        405.8199846400003,
+        325.0261088000002,
+        410.29122944000034,
+        336.98130880000014
+      ],
+      "kind": "text",
+      "text": " ",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        410.29122944000034,
+        325.0261088000002,
+        507.59938432000047,
+        336.98130880000014
+      ],
+      "kind": "text",
+      "text": "нормированных",
+      "latex": "",
+      "crop": "",
+      "method": "text_layer",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 11.955199999999934,
+      "bold": true
+    },
+    {
+      "page": 5,
+      "bbox": [
+        250.3690000000002,
+        339.47210880000017,
+        343.77258656000026,
+        351.42730880000016
+      ],
+      "kind": "text",
+      "text": "пространствах)",
+      "latex": "",
+      "crop": "",
+      "method": "text_layer",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 11.95519999999999,
+      "bold": true
+    },
+    {
+      "page": 5,
+      "bbox": [
+        59.5120000000002,
+        366.4711088000002,
+        66.2356044800002,
+        378.4263088000002
+      ],
+      "kind": "text",
+      "text": "1",
+      "latex": "",
+      "crop": "",
+      "method": "text_layer",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 11.95519999999999,
+      "bold": true
+    },
+    {
+      "page": 5,
+      "bbox": [
+        66.2350000000002,
+        365.34509940000015,
+        70.46951413000019,
+        373.31519940000015
+      ],
+      "kind": "text",
+      "text": "0",
+      "latex": "",
+      "crop": "",
+      "method": "text_layer",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": true,
+      "size": 7.970100000000002,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        70.9670000000002,
+        366.4711088000002,
+        74.70180448000019,
+        378.4263088000002
+      ],
+      "kind": "text",
+      "text": ".",
+      "latex": "",
+      "crop": "",
+      "method": "text_layer",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 11.95519999999999,
+      "bold": true
+    },
+    {
+      "page": 5,
+      "bbox": [
+        74.70180448000019,
+        364.8931109604643,
+        110.4622169600002,
+        382.11760287250877
+      ],
+      "kind": "text",
+      "text": " Пусть",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        110.4622169600002,
+        364.8931109604643,
+        112.27902699612983,
+        382.11760287250877
+      ],
+      "kind": "text",
+      "text": " ",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        112.27902699612983,
+        365.79130903302917,
+        123.70450062135565,
+        381.0067047264117
+      ],
+      "kind": "math",
+      "text": "",
+      "latex": "f",
+      "crop": "p5-math9.png",
+      "method": "omml_unverified",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        125.30700000000022,
+        366.4711088000002,
+        134.73487072000023,
+        378.4263088000002
+      ],
+      "kind": "text",
+      "text": "—",
+      "latex": "",
+      "crop": "",
+      "method": "text_layer",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 11.95519999999999,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        134.73487072000023,
+        364.8931109604643,
+        243.7997692800002,
+        382.11760287250877
+      ],
+      "kind": "text",
+      "text": " дифференцируемая",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        243.7997692800002,
+        364.8931109604643,
+        295.33385440000023,
+        382.11760287250877
+      ],
+      "kind": "text",
+      "text": " функция",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        295.33385440000023,
+        364.8931109604643,
+        311.5845577600002,
+        382.11760287250877
+      ],
+      "kind": "text",
+      "text": " на",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        311.5845577600002,
+        364.8931109604643,
+        355.47090144000026,
+        382.11760287250877
+      ],
+      "kind": "text",
+      "text": " отрезке",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        355.47090144000026,
+        364.8931109604643,
+        357.48691642380186,
+        382.11760287250877
+      ],
+      "kind": "text",
+      "text": " ",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        357.48691642380186,
+        364.8931109604643,
+        470.4736188800001,
+        382.11760287250877
+      ],
+      "kind": "math",
+      "text": "",
+      "latex": "[ a , b ] , \\, f ( [ a , b ] ) \\subset [ a , b ] ,",
+      "crop": "p5-math8.png",
+      "method": "omml_unverified",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        254.56439520776283,
+        389.278759406083,
+        339.86278924676736,
+        413.905929929321
+      ],
+      "kind": "math",
+      "text": "",
+      "latex": "\\underset { a \\leq t \\leq b } { \\operatorname* { m a x } } \\left| f ^ { \\prime } ( t ) \\right| < 1 .",
+      "crop": "p5-math10.png",
+      "method": "omml_unverified",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": false,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        41.953000000000316,
+        423.90510880000016,
+        99.49218208000032,
+        435.86030880000015
+      ],
+      "kind": "text",
+      "text": "Докажите,",
+      "latex": "",
+      "crop": "",
+      "method": "text_layer",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 11.95519999999999,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        99.49218208000032,
+        423.3875433668558,
+        121.59495584000032,
+        439.39861146614277
+      ],
+      "kind": "text",
+      "text": " что",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        121.59495584000032,
+        423.3875433668558,
+        179.78210976000034,
+        439.39861146614277
+      ],
+      "kind": "text",
+      "text": " уравнение",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        179.78210976000034,
+        423.3875433668558,
+        181.61636333483514,
+        439.39861146614277
+      ],
+      "kind": "text",
+      "text": " ",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        181.61636333483514,
+        423.3875433668558,
+        225.90338751323222,
+        439.39861146614277
+      ],
+      "kind": "math",
+      "text": "",
+      "latex": "f ( t ) = t",
+      "crop": "p5-math11.png",
+      "method": "omml_unverified",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        225.90338751323222,
+        423.3875433668558,
+        258.4996867200003,
+        439.39861146614277
+      ],
+      "kind": "text",
+      "text": " имеет",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        258.4996867200003,
+        423.3875433668558,
+        333.2663120000003,
+        439.39861146614277
+      ],
+      "kind": "text",
+      "text": " единственное",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        333.2663120000003,
+        423.3875433668558,
+        384.9629878400003,
+        439.39861146614277
+      ],
+      "kind": "text",
+      "text": " решение.",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        59.51200000000031,
+        444.0201088000002,
+        66.23560448000032,
+        455.97530880000016
+      ],
+      "kind": "text",
+      "text": "2",
+      "latex": "",
+      "crop": "",
+      "method": "text_layer",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 11.95519999999999,
+      "bold": true
+    },
+    {
+      "page": 5,
+      "bbox": [
+        66.23500000000031,
+        442.89409940000013,
+        70.4695141300003,
+        450.86419940000013
+      ],
+      "kind": "text",
+      "text": "0",
+      "latex": "",
+      "crop": "",
+      "method": "text_layer",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": true,
+      "size": 7.970100000000002,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        70.96700000000031,
+        444.0201088000002,
+        74.7018044800003,
+        455.97530880000016
+      ],
+      "kind": "text",
+      "text": ".",
+      "latex": "",
+      "crop": "",
+      "method": "text_layer",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 11.95519999999999,
+      "bold": true
+    },
+    {
+      "page": 5,
+      "bbox": [
+        74.7018044800003,
+        442.89409940000013,
+        132.89256320000032,
+        455.97530880000016
+      ],
+      "kind": "text",
+      "text": " Докажите",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        132.89256320000032,
+        442.89409940000013,
+        215.46473856000034,
+        455.97530880000016
+      ],
+      "kind": "text",
+      "text": " существование",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        215.46473856000034,
+        442.89409940000013,
+        225.86337152000036,
+        455.97530880000016
+      ],
+      "kind": "text",
+      "text": " и",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        225.86337152000036,
+        442.89409940000013,
+        312.3341376000005,
+        455.97530880000016
+      ],
+      "kind": "text",
+      "text": " единственность",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        312.3341376000005,
+        442.89409940000013,
+        361.9183296000005,
+        455.97530880000016
+      ],
+      "kind": "text",
+      "text": " решения",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        361.9183296000005,
+        442.89409940000013,
+        421.24361856000047,
+        455.97530880000016
+      ],
+      "kind": "text",
+      "text": " уравнения",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        261.32727330845813,
+        464.8025016208386,
+        333.00383071895993,
+        495.94839235863043
+      ],
+      "kind": "math",
+      "text": "",
+      "latex": "t = \\cfrac { 1 + \\operatorname { s i n } { t } } { 2 } .",
+      "crop": "p5-math12.png",
+      "method": "formula_image",
+      "warnings": [
+        "Резервное изображение формулы: RuntimeError: Pandoc отклонил формулу: [WARNING] Could not convert TeX math t = \\cfrac { 1 + \\operatorname { s i n } { t } } { 2 } ., rendering as TeX:\n  t = \\cfrac { 1 + \\operatorname { s i n }\n             ^\n  unexpected control sequence \\cfrac\n  expecting \"%\", \"\\\\label\", \"\\\\tag\", \"\\\\nonumber\", whitespace or \"\\\\allowbreak\"\n"
+      ],
+      "anchor_y": null,
+      "inline": false,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        41.952999999999975,
+        504.00810879999995,
+        87.46046879999997,
+        515.9633087999999
+      ],
+      "kind": "text",
+      "text": "Найдите",
+      "latex": "",
+      "crop": "",
+      "method": "text_layer",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 11.95519999999999,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        87.46046879999997,
+        504.00810879999995,
+        168.40434591999997,
+        515.9633087999999
+      ],
+      "kind": "text",
+      "text": " приближённое",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        168.40434591999997,
+        504.00810879999995,
+        216.85040288000005,
+        515.9633087999999
+      ],
+      "kind": "text",
+      "text": " решение",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        216.85040288000005,
+        504.00810879999995,
+        276.1756918400001,
+        515.9633087999999
+      ],
+      "kind": "text",
+      "text": " уравнения",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        276.1756918400001,
+        504.00810879999995,
+        285.27479456000015,
+        515.9633087999999
+      ],
+      "kind": "text",
+      "text": " с",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        285.27479456000015,
+        504.00810879999995,
+        345.42618784000007,
+        515.9633087999999
+      ],
+      "kind": "text",
+      "text": " точностью",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        345.42618784000007,
+        504.00810879999995,
+        373.38261888,
+        515.9633087999999
+      ],
+      "kind": "text",
+      "text": " 0,01.",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        59.512,
+        524.1231088,
+        66.23560448,
+        536.0783088
+      ],
+      "kind": "text",
+      "text": "3",
+      "latex": "",
+      "crop": "",
+      "method": "text_layer",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 11.95519999999999,
+      "bold": true
+    },
+    {
+      "page": 5,
+      "bbox": [
+        66.235,
+        522.9960993999999,
+        70.46951413,
+        530.9661993999999
+      ],
+      "kind": "text",
+      "text": "0",
+      "latex": "",
+      "crop": "",
+      "method": "text_layer",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": true,
+      "size": 7.970100000000002,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        70.967,
+        524.1231088,
+        74.70180447999999,
+        536.0783088
+      ],
+      "kind": "text",
+      "text": ".",
+      "latex": "",
+      "crop": "",
+      "method": "text_layer",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 11.95519999999999,
+      "bold": true
+    },
+    {
+      "page": 5,
+      "bbox": [
+        74.70180447999999,
+        522.9960993999999,
+        132.8915632,
+        536.0783088
+      ],
+      "kind": "text",
+      "text": " Докажите",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        132.8915632,
+        522.9960993999999,
+        215.46373856000002,
+        536.0783088
+      ],
+      "kind": "text",
+      "text": " существование",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        215.46373856000002,
+        522.9960993999999,
+        225.86237152000004,
+        536.0783088
+      ],
+      "kind": "text",
+      "text": " и",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        225.86237152000004,
+        522.9960993999999,
+        312.34509280000015,
+        536.0783088
+      ],
+      "kind": "text",
+      "text": " единственность",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        312.34509280000015,
+        522.9960993999999,
+        361.9173296000002,
+        536.0783088
+      ],
+      "kind": "text",
+      "text": " решения",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        361.9173296000002,
+        522.9960993999999,
+        421.24261856000015,
+        536.0783088
+      ],
+      "kind": "text",
+      "text": " уравнения",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        262.75002853000547,
+        546.4327457745115,
+        343.489230334787,
+        564.3508319584718
+      ],
+      "kind": "math",
+      "text": "",
+      "latex": "t ^ { 5 } - 7 t + 1 = 0",
+      "crop": "p5-math13.png",
+      "method": "omml_unverified",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": false,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        41.952999999999975,
+        576.2281088,
+        54.30630815999998,
+        588.1833088
+      ],
+      "kind": "text",
+      "text": "на",
+      "latex": "",
+      "crop": "",
+      "method": "text_layer",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 11.95519999999999,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        54.30630815999998,
+        574.8515586595694,
+        98.19265183999997,
+        591.1164591534177
+      ],
+      "kind": "text",
+      "text": " отрезке",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        98.19265183999997,
+        574.8515586595694,
+        100.96198140512361,
+        591.1164591534177
+      ],
+      "kind": "text",
+      "text": " ",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        100.96198140512361,
+        574.8515586595694,
+        128.79861887999996,
+        591.1164591534177
+      ],
+      "kind": "math",
+      "text": "",
+      "latex": "[ 0 ; 1 ] .",
+      "crop": "p5-math14.png",
+      "method": "omml_unverified",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        128.79861887999996,
+        574.8515586595694,
+        178.20348288,
+        591.1164591534177
+      ],
+      "kind": "text",
+      "text": " Найдите",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        178.20348288,
+        574.8515586595694,
+        259.1593151999999,
+        591.1164591534177
+      ],
+      "kind": "text",
+      "text": " приближённое",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        259.1593151999999,
+        574.8515586595694,
+        307.59341696,
+        591.1164591534177
+      ],
+      "kind": "text",
+      "text": " решение",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        307.59341696,
+        574.8515586595694,
+        366.91870592000015,
+        591.1164591534177
+      ],
+      "kind": "text",
+      "text": " уравнения",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        366.91870592000015,
+        574.8515586595694,
+        376.0297638400001,
+        591.1164591534177
+      ],
+      "kind": "text",
+      "text": " с",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        376.0297638400001,
+        574.8515586595694,
+        436.1692019200001,
+        591.1164591534177
+      ],
+      "kind": "text",
+      "text": " точностью",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        436.1692019200001,
+        574.8515586595694,
+        464.12961887999995,
+        591.1164591534177
+      ],
+      "kind": "text",
+      "text": " 0,01.",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        59.511999999999944,
+        596.3431088,
+        69.97040895999994,
+        608.2983088
+      ],
+      "kind": "text",
+      "text": "4.",
+      "latex": "",
+      "crop": "",
+      "method": "text_layer",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 11.95519999999999,
+      "bold": true
+    },
+    {
+      "page": 5,
+      "bbox": [
+        69.97040895999994,
+        596.3431088,
+        131.41018207999994,
+        608.2983088
+      ],
+      "kind": "text",
+      "text": " Докажите,",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        131.41018207999994,
+        596.3431088,
+        153.51295583999996,
+        608.2983088
+      ],
+      "kind": "text",
+      "text": " что",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        153.51295583999996,
+        596.3431088,
+        263.39200352,
+        608.2983088
+      ],
+      "kind": "text",
+      "text": " последовательность",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        196.21481081753478,
+        618.686732918565,
+        399.2498103385489,
+        688.071605276801
+      ],
+      "kind": "math",
+      "text": "",
+      "latex": "2 , \\: 2 + \\frac { 1 } { 2 } , \\: 2 + \\cfrac { 1 } { 2 + \\cfrac { 1 } { 2 } } , \\: 2 + \\cfrac { 1 } { 2 + \\cfrac { 1 } { 2 + \\cfrac { 1 } { 2 } } } , \\ldots",
+      "crop": "p5-math15.png",
+      "method": "formula_image",
+      "warnings": [
+        "Резервное изображение формулы: RuntimeError: Pandoc отклонил формулу: [WARNING] Could not convert TeX math 2 , \\: 2 + \\frac { 1 } { 2 } , \\: 2 + \\cfrac { 1 } { 2 + \\cfrac { 1 } { 2 } } , \\: 2 + \\cfrac { 1 } { 2 + \\cfrac { 1 } { 2 + \\cfrac { 1 } { 2 } } } , \\ldots, rendering as TeX:\n   } , \\: 2 + \\cfrac { 1 } { 2 + \\cfrac { \n                     ^\n  unexpected control sequence \\cfrac\n  expecting \"%\", \"\\\\label\", \"\\\\tag\", \"\\\\nonumber\", whitespace or \"\\\\allowbreak\"\n"
+      ],
+      "anchor_y": null,
+      "inline": false,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        41.952999999999975,
+        694.4761088,
+        72.51168671999997,
+        706.4313087999999
+      ],
+      "kind": "text",
+      "text": "имеет",
+      "latex": "",
+      "crop": "",
+      "method": "text_layer",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 11.95519999999999,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        72.51168671999997,
+        694.4761088,
+        116.06806687999998,
+        706.4313087999999
+      ],
+      "kind": "text",
+      "text": " предел,",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        116.06806687999998,
+        694.4761088,
+        126.47865503999996,
+        706.4313087999999
+      ],
+      "kind": "text",
+      "text": " и",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        126.47865503999996,
+        694.4761088,
+        173.28684959999998,
+        706.4313087999999
+      ],
+      "kind": "text",
+      "text": " найдите",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        173.28684959999998,
+        694.4761088,
+        196.69034911999998,
+        706.4313087999999
+      ],
+      "kind": "text",
+      "text": " его.",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        59.51199999999997,
+        714.5911087999999,
+        69.97040895999997,
+        726.5463087999999
+      ],
+      "kind": "text",
+      "text": "5.",
+      "latex": "",
+      "crop": "",
+      "method": "text_layer",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 11.955200000000005,
+      "bold": true
+    },
+    {
+      "page": 5,
+      "bbox": [
+        69.97040895999997,
+        713.5982007531826,
+        131.41018207999997,
+        730.0561912525749
+      ],
+      "kind": "text",
+      "text": " Докажите,",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        131.41018207999997,
+        713.5982007531826,
+        153.83574624,
+        730.0561912525749
+      ],
+      "kind": "text",
+      "text": " что",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        153.83574624,
+        713.5982007531826,
+        206.82956127999995,
+        730.0561912525749
+      ],
+      "kind": "text",
+      "text": " линейное",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        206.82956127999995,
+        713.5982007531826,
+        279.64748896000003,
+        730.0561912525749
+      ],
+      "kind": "text",
+      "text": " отображение",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        279.64748896000003,
+        713.5982007531826,
+        282.2229048123589,
+        730.0561912525749
+      ],
+      "kind": "text",
+      "text": " ",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        282.2229048123589,
+        713.9064287097777,
+        294.23957922787037,
+        726.9258222667848
+      ],
+      "kind": "math",
+      "text": "",
+      "latex": "A",
+      "crop": "p5-math18.png",
+      "method": "omml_unverified",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        294.23957922787037,
+        713.5982007531826,
+        299.1692706892092,
+        730.0561912525749
+      ],
+      "kind": "text",
+      "text": " ",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        299.1692706892092,
+        713.5982007531826,
+        350.455234216705,
+        729.838283526133
+      ],
+      "kind": "math",
+      "text": "",
+      "latex": "\\mathbb { R } _ { 2 } ^ { n } \\to \\mathbb { R } _ { 2 } ^ { n }",
+      "crop": "p5-math16.png",
+      "method": "omml_unverified",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        350.455234216705,
+        713.5982007531826,
+        358.97970752,
+        730.0561912525749
+      ],
+      "kind": "text",
+      "text": " с",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        358.97970752,
+        713.5982007531826,
+        413.91265599999997,
+        730.0561912525749
+      ],
+      "kind": "text",
+      "text": " матрицей",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        413.91265599999997,
+        713.5982007531826,
+        416.6671296345709,
+        730.0561912525749
+      ],
+      "kind": "text",
+      "text": " ",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        416.6671296345709,
+        713.756057732009,
+        502.963820264656,
+        730.0561912525749
+      ],
+      "kind": "math",
+      "text": "",
+      "latex": "\\Vert a _ { i j } \\Vert , \\, i , j = \\overline { { 1 , n } }",
+      "crop": "p5-math17.png",
+      "method": "omml_unverified",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        502.963820264656,
+        713.5982007531826,
+        552.1935308799999,
+        730.0561912525749
+      ],
+      "kind": "text",
+      "text": " является",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        41.952999999999975,
+        729.0371087999999,
+        112.49943967999998,
+        740.9923088
+      ],
+      "kind": "text",
+      "text": "сжимающим,",
+      "latex": "",
+      "crop": "",
+      "method": "text_layer",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 11.955200000000005,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        112.49943967999998,
+        729.0371087999999,
+        139.80272544,
+        740.9923088
+      ],
+      "kind": "text",
+      "text": " если",
+      "latex": "",
+      "crop": "",
+      "method": "geometry",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        263.76716282498313,
+        738.6548227283904,
+        330.0085747700485,
+        780.8497662339018
+      ],
+      "kind": "math",
+      "text": "",
+      "latex": "\\sum _ { i , j = 1 } ^ { n } a _ { i j } ^ { 2 } < 1 .",
+      "crop": "p5-math19.png",
+      "method": "omml_unverified",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": false,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        294.145,
+        792.4211088,
+        299.9970704,
+        804.3763088
+      ],
+      "kind": "text",
+      "text": "5",
+      "latex": "",
+      "crop": "",
+      "method": "page_number_separate",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 11.955199999999998,
+      "bold": false
+    }
+  ]
+}

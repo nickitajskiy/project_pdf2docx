@@ -1,0 +1,131 @@
+{
+  "source": {
+    "filename": "2023_fan.pdf",
+    "bytes": 225768,
+    "sha256": "8e5ee4755377a4e53b9a31cb24cf0eece70c800c5739b4e0ab84bbd65fe23481",
+    "pages": [
+      {
+        "page": 1,
+        "width": 595.276,
+        "height": 841.89,
+        "chars": 1565
+      },
+      {
+        "page": 2,
+        "width": 595.276,
+        "height": 841.89,
+        "chars": 1750
+      },
+      {
+        "page": 3,
+        "width": 595.276,
+        "height": 841.89,
+        "chars": 1531
+      },
+      {
+        "page": 4,
+        "width": 595.276,
+        "height": 841.89,
+        "chars": 1045
+      },
+      {
+        "page": 5,
+        "width": 595.276,
+        "height": 841.89,
+        "chars": 1352
+      },
+      {
+        "page": 6,
+        "width": 595.276,
+        "height": 841.89,
+        "chars": 1172
+      },
+      {
+        "page": 7,
+        "width": 595.276,
+        "height": 841.89,
+        "chars": 1215
+      },
+      {
+        "page": 8,
+        "width": 595.276,
+        "height": 841.89,
+        "chars": 1360
+      },
+      {
+        "page": 9,
+        "width": 595.276,
+        "height": 841.89,
+        "chars": 907
+      }
+    ]
+  },
+  "outputs": {
+    "2023_fan_omml_page5.docx": {
+      "sha256": "ce5c6d9698e1fdfe5085869cb117464e56bf5d5667790c631dcf065516cd22ad",
+      "processed_pages": 1,
+      "math_regions": 20,
+      "omml_counter": 17,
+      "omml_xml_nodes": 17,
+      "formula_images": 3,
+      "page_images": 0,
+      "inline_shapes": 3,
+      "superscript_runs": 7,
+      "unmapped_cid_in_editable_text": false,
+      "warnings": 25
+    },
+    "2023_fan_pages.docx": {
+      "sha256": "181aa3f0511dab2d068b4b6c43dc162890b2468ce9578ac415e06f3c5284f1f3",
+      "processed_pages": 9,
+      "math_regions": 0,
+      "omml_counter": 0,
+      "omml_xml_nodes": 0,
+      "formula_images": 0,
+      "page_images": 9,
+      "inline_shapes": 9,
+      "superscript_runs": 0,
+      "unmapped_cid_in_editable_text": false,
+      "warnings": 1
+    },
+    "2023_fan_editable.docx": {
+      "sha256": "77f5fce59d7a82e7603312840b26db186c26dc2d1a82bca132279e124ae885fe",
+      "processed_pages": 9,
+      "math_regions": 244,
+      "omml_counter": 0,
+      "omml_xml_nodes": 0,
+      "formula_images": 244,
+      "page_images": 0,
+      "inline_shapes": 244,
+      "superscript_runs": 30,
+      "unmapped_cid_in_editable_text": false,
+      "warnings": 18
+    }
+  },
+  "versions": {
+    "pdfplumber": "0.11.9",
+    "pypdfium2": "5.14.0",
+    "python-docx": "1.2.0",
+    "streamlit": "1.50.0",
+    "pix2text": "1.1.4",
+    "cnstd": "1.2.6",
+    "cnocr": "2.3.1",
+    "transformers": "4.48.3",
+    "optimum": "1.24.0",
+    "torch": "2.6.0",
+    "torchvision": "0.21.0",
+    "huggingface-hub": "0.36.2",
+    "onnxruntime": "1.31.0",
+    "ultralytics": "8.4.178"
+  },
+  "platform": "macOS-27.0-arm64-arm-64bit",
+  "python": "3.12.14",
+  "tests": "21 passed",
+  "syntax_python_311": "compileall passed; full dependency/runtime tests not run under 3.11",
+  "editable_rendered_pages": 11,
+  "omml_rendered_pages": 1,
+  "pages_rendered_pages": 9,
+  "model_revisions": {
+    "mfd-1.5": "f470a885e0fca1d3d2bfa2a54991db7ae01f1861",
+    "mfr-1.5": "1cef9f0bdcd6a4c63df7de1311fb0894593340cc"
+  }
+}

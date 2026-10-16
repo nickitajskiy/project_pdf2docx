@@ -1,0 +1,196 @@
+{
+  "mode": "Сохранить внешний вид",
+  "pages": 9,
+  "math_regions": 0,
+  "omml": 0,
+  "formula_images": 0,
+  "page_images": 9,
+  "warnings": [
+    {
+      "page": 0,
+      "message": "Страницы сохранены изображениями; весь текст и формулы не редактируются. Математические области не обнаруживались."
+    }
+  ],
+  "blocks": [
+    {
+      "page": 1,
+      "bbox": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "kind": "page_image",
+      "text": "",
+      "latex": "",
+      "crop": "page-1.png",
+      "method": "page_image",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 2,
+      "bbox": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "kind": "page_image",
+      "text": "",
+      "latex": "",
+      "crop": "page-2.png",
+      "method": "page_image",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 3,
+      "bbox": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "kind": "page_image",
+      "text": "",
+      "latex": "",
+      "crop": "page-3.png",
+      "method": "page_image",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 4,
+      "bbox": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "kind": "page_image",
+      "text": "",
+      "latex": "",
+      "crop": "page-4.png",
+      "method": "page_image",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 5,
+      "bbox": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "kind": "page_image",
+      "text": "",
+      "latex": "",
+      "crop": "page-5.png",
+      "method": "page_image",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 6,
+      "bbox": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "kind": "page_image",
+      "text": "",
+      "latex": "",
+      "crop": "page-6.png",
+      "method": "page_image",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 7,
+      "bbox": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "kind": "page_image",
+      "text": "",
+      "latex": "",
+      "crop": "page-7.png",
+      "method": "page_image",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 8,
+      "bbox": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "kind": "page_image",
+      "text": "",
+      "latex": "",
+      "crop": "page-8.png",
+      "method": "page_image",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    },
+    {
+      "page": 9,
+      "bbox": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "kind": "page_image",
+      "text": "",
+      "latex": "",
+      "crop": "page-9.png",
+      "method": "page_image",
+      "warnings": [],
+      "anchor_y": null,
+      "inline": true,
+      "superscript": false,
+      "size": 12,
+      "bold": false
+    }
+  ]
+}
