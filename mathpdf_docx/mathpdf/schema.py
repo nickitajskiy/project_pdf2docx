@@ -17,6 +17,7 @@ class Block:
     kind: str
     text: str = ''
     latex: str = ''
+    text_layer_latex: str = ''
     latex_for_omml: str = ''
     latex_normalizations: list[str] = field(default_factory=list)
     crop: str = ''
@@ -67,4 +68,6 @@ class Report:
                 if b.latex_normalizations:
                     lines.append('  Для OMML: ' + b.latex_for_omml)
                     lines.extend('  Совместимость: '+change for change in b.latex_normalizations)
+                if b.method=='omml_text_layer_unverified':
+                    lines.append('  Резерв из текстового слоя PDF: ' + b.text_layer_latex)
         return '\n'.join(lines)

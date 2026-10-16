@@ -13,6 +13,8 @@ from .schema import Mode
 def setup(doc):
     normal=doc.styles['Normal']
     normal.font.name='Times New Roman'; normal.font.size=Pt(12)
+    lang=OxmlElement('w:lang'); lang.set(qn('w:val'),'ru-RU')
+    normal.element.get_or_add_rPr().append(lang)
     normal.paragraph_format.space_after=Pt(4)
     normal.paragraph_format.line_spacing=1.15  # множитель, не фиксированная высота
     from docx.shared import RGBColor
@@ -52,6 +54,8 @@ def write_editable(paragraphs, output, mode, report, engine=None, pandoc=None):
         paragraph.paragraph_format.left_indent=Pt(max(0,min(65,p.bbox[0]-42)))
         if p.heading:
             paragraph.paragraph_format.keep_with_next=True
+            paragraph.paragraph_format.left_indent=Pt(0)
+            paragraph.alignment=WD_ALIGN_PARAGRAPH.CENTER
         if all(b.kind!='text' or not b.text.strip() for b in p.parts):
             paragraph.alignment=WD_ALIGN_PARAGRAPH.CENTER
         for block in p.parts:
@@ -70,6 +74,18 @@ def write_editable(paragraphs, output, mode, report, engine=None, pandoc=None):
                         block.method='omml_unverified'; report.omml+=1
                         continue
                     except Exception as e:
+                        if block.latex and block.text_layer_latex:
+                            try:
+                                node=latex_to_omml(block.text_layer_latex,pandoc)
+                            except Exception:
+                                pass
+                            else:
+                                paragraph._p.append(node)
+                                block.method='omml_text_layer_unverified'; report.omml+=1
+                                block.latex_for_omml=block.text_layer_latex
+                                msg='OCR отклонён; простая формула восстановлена из Unicode и геометрии текстового слоя PDF. Требуется сверка. Причина OCR: '+str(e)
+                                block.warnings.append(msg); report.warn(block.page,msg)
+                                continue
                         msg=f'Резервное изображение формулы: {type(e).__name__}: {e}'
                         block.warnings.append(msg); report.warn(block.page,msg)
                 picture(paragraph,block); block.method='formula_image'; report.formula_images+=1

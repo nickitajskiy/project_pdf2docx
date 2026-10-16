@@ -1,8 +1,8 @@
 {
   "pages": 9,
-  "math_regions": 244,
-  "native_omml": 240,
-  "formula_images": 4,
+  "math_regions": 242,
+  "native_omml": 242,
+  "formula_images": 0,
   "first_integral_domain": {
     "source_page": 3,
     "domain": "[-1;1]",
@@ -23,38 +23,33 @@
   "orphan_brackets": [],
   "complete_matrix_rows": true,
   "no_empty_script_or_operator_bodies": true,
-  "fallbacks": [
+  "fallbacks": [],
+  "numero_heading_restored": true,
+  "source_word_spaces_restored": true,
+  "text_layer_recoveries": [
     {
       "page": 2,
-      "latex": "^ { c }",
-      "warnings": [
-        "Резервное изображение формулы: RuntimeError: В OMML получен индекс без основания; исходная формула сохранена изображением."
-      ]
+      "raw_ocr": "^ { c }",
+      "pdf_latex": "c"
     },
     {
       "page": 4,
-      "latex": "^ { c }",
-      "warnings": [
-        "Резервное изображение формулы: RuntimeError: В OMML получен индекс без основания; исходная формула сохранена изображением."
-      ]
+      "raw_ocr": "^ { c }",
+      "pdf_latex": "c"
     },
     {
       "page": 4,
-      "latex": "^ { [ 0 , 1 ] } ,",
-      "warnings": [
-        "Резервное изображение формулы: RuntimeError: В OMML получен индекс без основания; исходная формула сохранена изображением."
-      ]
+      "raw_ocr": "^ { [ 0 , 1 ] } ,",
+      "pdf_latex": "[0,1]"
     },
     {
       "page": 5,
-      "latex": "\\l _ { p } , \\, p \\in [ 1 , + \\infty ) , \\, C [ a , b ]",
-      "warnings": [
-        "Резервное изображение формулы: RuntimeError: Pandoc отклонил формулу: [WARNING] Could not convert TeX math \\l _ { p } , \\, p \\in [ 1 , + \\infty ) , \\, C [ a , b ], rendering as TeX:\n  \\l _ { p } , \\, p \\in [ 1 , + \\infty ) ,\n     ^\n  unexpected control sequence \\l\n  expecting \"%\", \"\\\\label\", \"\\\\tag\", \"\\\\nonumber\", whitespace or \"\\\\allowbreak\"\n"
-      ]
+      "raw_ocr": "\\l _ { p } , \\, p \\in [ 1 , + \\infty ) , \\, C [ a , b ]",
+      "pdf_latex": "l_{p},\\,p\\,\\in \\,[1,\\,+\\infty ),\\,C[a,\\,b]"
     }
   ],
   "ocr_formatting_replay": {
-    "exact_crop_matches": 244,
+    "exact_crop_matches": 242,
     "description": "Full real MFD/MFR executed; subsequent formatting iterations reuse raw OCR only for byte-identical RGB crops."
   }
 }

@@ -62,14 +62,14 @@
   },
   "outputs": {
     "2023_fan_omml_page5.docx": {
-      "sha256": "bb8145082124ad1a067a1eec9547f9288d82481625a26f194fcba4dbf682cd45",
+      "sha256": "583735b61fe17f97e006bdec4d2facbc9d75436c8efbc8975d50877958603df9",
       "processed_pages": 1,
       "math_regions": 20,
-      "omml_counter": 19,
-      "omml_xml_nodes": 19,
-      "formula_images": 1,
+      "omml_counter": 20,
+      "omml_xml_nodes": 20,
+      "formula_images": 0,
       "page_images": 0,
-      "inline_shapes": 1,
+      "inline_shapes": 0,
       "superscript_runs": 7,
       "unmapped_cid_in_editable_text": false,
       "warnings": 23
@@ -88,30 +88,30 @@
       "warnings": 1
     },
     "2023_fan_editable.docx": {
-      "sha256": "7916c7b01e7968cc63ec4635f2322a847b8b7d10edf35c0784635f92cf06f834",
+      "sha256": "e28f705348885f71435dffb58af438b17960f50a7ec8a1ed46e77a0be5e89742",
       "processed_pages": 9,
-      "math_regions": 244,
+      "math_regions": 242,
       "omml_counter": 0,
       "omml_xml_nodes": 0,
-      "formula_images": 244,
+      "formula_images": 242,
       "page_images": 0,
-      "inline_shapes": 244,
+      "inline_shapes": 242,
       "superscript_runs": 30,
       "unmapped_cid_in_editable_text": false,
       "warnings": 11
     },
     "2023_fan_omml.docx": {
-      "sha256": "6dbb4b1d4a1821bc1fef46a41a61a96ab5691c33ea80fbe8f6d4244f21988299",
+      "sha256": "f9c9525cbdef611e9b0de454916d18c7d81190a2e190c71034b6a8b0fc4aea79",
       "processed_pages": 9,
-      "math_regions": 244,
-      "omml_counter": 240,
-      "omml_xml_nodes": 240,
-      "formula_images": 4,
+      "math_regions": 242,
+      "omml_counter": 242,
+      "omml_xml_nodes": 242,
+      "formula_images": 0,
       "page_images": 0,
-      "inline_shapes": 4,
+      "inline_shapes": 0,
       "superscript_runs": 30,
       "unmapped_cid_in_editable_text": false,
-      "warnings": 259
+      "warnings": 257
     }
   },
   "versions": {
@@ -132,7 +132,7 @@
   },
   "platform": "macOS-27.0-arm64-arm-64bit",
   "python": "3.12.14",
-  "tests": "45 passed",
+  "tests": "57 passed",
   "syntax_python_311": "compileall passed; full dependency/runtime tests not run under 3.11",
   "editable_rendered_pages": 11,
   "omml_rendered_pages": 10,

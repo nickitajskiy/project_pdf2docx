@@ -21,6 +21,11 @@ def center_in(c, b):
     return b[0] <= (c['x0']+c['x1'])/2 <= b[2] and b[1] <= (c['top']+c['bottom'])/2 <= b[3]
 
 
+def belongs_to_math(c, box):
+    return center_in(c, box) or (any(k in c['fontname'].upper() for k in
+        ['CMEX','CMMI','CMSY','CMR','MSBM','MSAM']) and overlap(cb(c), box)>0)
+
+
 def complete_lower_scripts(chars, boxes):
     """Включить пропущенные края нижних индексов, не удаляя одиночные знаки.
 
@@ -105,7 +110,14 @@ def prepare_regions(chars, detected, width, height, report, page):
 def build_paragraphs(page, math_blocks, report):
     chars = page.chars
     body = median([c['size'] for c in chars if len(c['text'])==1] or [12])
-    text_chars = [c for c in chars if not any(center_in(c,m.bbox) or (any(k in c['fontname'].upper() for k in ['CMEX','CMMI','CMSY','CMR','MSBM','MSAM']) and overlap(cb(c),m.bbox)>0) for m in math_blocks)]
+    from .textmath import simple_text_math
+    content_bounds = {}
+    for m in math_blocks:
+        owned = [c for c in chars if belongs_to_math(c, m.bbox)]
+        if owned:
+            content_bounds[id(m)] = union([cb(c) for c in owned])
+            m.text_layer_latex = simple_text_math(owned)
+    text_chars = [c for c in chars if not any(belongs_to_math(c,m.bbox) for m in math_blocks)]
     # Группировать сначала текст, не растягивая строки по высоким формулам.
     lines=[]
     ordinary=[c for c in text_chars if c['size']>=.86*body]
@@ -156,7 +168,9 @@ def build_paragraphs(page, math_blocks, report):
         prev=None
         for a in atoms:
             if prev:
-                gap=a.bbox[0]-prev.bbox[2]
+                # Padding детектора не является границей слова: исходный
+                # межсловный пробел измеряется между видимыми символами PDF.
+                gap=content_bounds.get(id(a),a.bbox)[0]-content_bounds.get(id(prev),prev.bbox)[2]
                 if gap>max(1.2,body*.15) and not prev.text.endswith(' ') and not a.text.startswith(' '):
                     parts.append(Block(page.page_number,(prev.bbox[2],bbox[1],a.bbox[0],bbox[3]),'text',text=' ',method='geometry'))
             if parts and a.kind=='text' and parts[-1].kind=='text' and a.superscript==parts[-1].superscript and a.bold==parts[-1].bold and abs(a.size-parts[-1].size)<.5:
@@ -243,7 +257,7 @@ def refine_detections(chars, detections, report, page, image=None, page_size=Non
         inline=d.get('inline',True) if isinstance(d,dict) else True
         owned=''.join(c['text'] for c in sorted(chars,key=lambda c:c['x0']) if center_in(c,b)).strip()
         left=min((c['x0'] for c in chars),default=0)
-        if b[2]-b[0]<35 and (re.fullmatch(r'\d+[0∗*]?\.?',owned) or (b[0]<left+45 and re.fullmatch(r'[а-я]\)',owned))):
+        if b[2]-b[0]<50 and (re.fullmatch(r'№\s*\d*[.,;:]?',owned) or re.fullmatch(r'\d+[0∗*]?\.?',owned) or (b[0]<left+45 and re.fullmatch(r'[а-я]\)',owned))):
             continue  # номер / верхняя отметка — текст, а не формула
         if inline and image is not None:
             contained=[k for k,x in enumerate(anchors) if math_row(x) and b[1]<x[0]<b[3]]

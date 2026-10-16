@@ -181,3 +181,69 @@ def test_underset_integral_has_attached_body_and_no_placeholder(domain):
 def test_empty_operator_body_is_not_accepted_as_complete_equation():
     with pytest.raises(RuntimeError,match='пустой шаблон'):
         latex_to_omml(r'\int_\Omega{}')
+
+
+@pytest.mark.parametrize('token',['№','№ 11.'])
+def test_numero_sign_is_text_not_an_ocr_formula(sample,tmp_path,token):
+    path=tmp_path/'Заголовок.pdf'
+    c=canvas.Canvas(str(path),pagesize=(595,842));c.setFont('TestRussian',12)
+    c.drawString(180,240,'Семинар '+token+' (контрольная работа)');c.save()
+    import pdfplumber
+    from mathpdf.layout import refine_detections
+    with pdfplumber.open(path) as pdf:
+        page=pdf.pages[0];char=next(ch for ch in page.chars if ch['text']=='№')
+        end=char['x1'] if token=='№' else next(ch['x1'] for ch in page.chars if ch['text']=='.')
+        bbox=(char['x0']-1,char['top']-1,end+1,char['bottom']+1)
+        assert refine_detections(page.chars,[bbox],Report('test'),1)==[]
+
+
+def test_detector_padding_does_not_eat_word_spaces(sample):
+    from types import SimpleNamespace
+    from mathpdf.layout import build_paragraphs
+    from mathpdf.schema import Block
+    chars=[]
+    for text,x0,x1 in [('в',40,46),('x',50,56),('м',60,67)]:
+        chars.append(dict(text=text,x0=x0,x1=x1,top=20,bottom=32,size=12,fontname='Test'))
+    page=SimpleNamespace(chars=chars,height=842,width=595,page_number=1)
+    formula=Block(1,(47,19,59,33),'math')
+    paragraphs=build_paragraphs(page,[formula],Report('test'))
+    assert len(paragraphs)==1
+    parts=paragraphs[0].parts
+    assert ''.join(b.text if b.kind=='text' else '[FORMULA]' for b in parts)=='в [FORMULA] м'
+
+
+@pytest.mark.parametrize('symbols,expected',[
+    ([('c',12,10,22,10,15)],'c'),
+    ([('[',12,10,22,10,14),('0',12,10,22,14,20),(',',12,10,22,20,23),('1',12,10,22,23,29),(']',12,10,22,29,33)],'[0,1]'),
+    ([('l',12,10,22,10,14),('p',8,15,23,14,18)],'l_{p}'),
+])
+def test_simple_pdf_math_recovers_only_known_geometry(symbols,expected):
+    from mathpdf.textmath import simple_text_math
+    chars=[dict(text=t,size=s,top=top,bottom=bottom,x0=x0,x1=x1) for t,s,top,bottom,x0,x1 in symbols]
+    assert simple_text_math(chars)==expected
+
+
+@pytest.mark.parametrize('symbol',['√','∫','(cid:82)','Ж','\\'])
+def test_simple_pdf_math_rejects_unknown_or_complex_symbols(symbol):
+    from mathpdf.textmath import simple_text_math
+    assert simple_text_math([dict(text=symbol,size=12,top=10,bottom=22,x0=10,x1=20)])==''
+
+
+@pytest.mark.skipif(not shutil.which('pandoc'),reason='Pandoc отсутствует')
+def test_invalid_ocr_can_use_verified_simple_pdf_characters(sample):
+    class Unsupported(FixtureEngineForText):
+        pass
+    result=convert(sample,Mode.OMML,engine=Unsupported())
+    report=json.loads(result.report_json)
+    assert report['omml']==2 and report['formula_images']==0
+    assert all(b['method']=='omml_text_layer_unverified' for b in report['blocks'] if b['kind']=='math')
+    assert 'notarealcommand' in result.report_text and 'текстового слоя' in result.report_text
+    doc=Document(BytesIO(result.docx))
+    assert len(list(doc.element.iter(qn('m:oMath'))))==2
+    lang=doc.styles['Normal'].element.find(qn('w:rPr')).find(qn('w:lang'))
+    assert lang.get(qn('w:val'))=='ru-RU'
+
+
+class FixtureEngineForText:
+    def detect(self,image,size):return [(219,49,242,65),(219,99,245,116)]
+    def recognize(self,image):return r'\notarealcommand{x}'
