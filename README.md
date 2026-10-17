@@ -13,7 +13,5 @@
 - [Установка и запуск](mathpdf_docx/README.md)
 - [Математические зависимости](mathpdf_docx/MATH_SETUP.md)
 - [Фактические проверки и ограничения](mathpdf_docx/VALIDATION.md)
-- [Анализ тестового PDF](mathpdf_docx/SAMPLE_ANALYSIS.md)
-- [ZIP проекта](mathpdf_docx_project.zip)
 
 Окно и конвертер проверены на macOS ARM64. Испытания Windows в этой среде не выполнялись. Точное воспроизведение вёрстки и безошибочность распознавания не гарантируются.
