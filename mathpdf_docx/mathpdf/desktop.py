@@ -31,17 +31,28 @@ def conversion_worker(events, source, mode, max_mb, max_pages, converter=None):
 
 
 def save_result(result, destination, source):
-    """Сохраняет выбранный результат и оба отчёта, не затрагивая PDF."""
+    """Сохраняет только DOCX, не затрагивая PDF и отчёты."""
     target = Path(destination).expanduser().resolve()
     if target.suffix.lower() != '.docx':
         raise ValueError('Укажите имя с расширением .docx.')
-    targets = [target, target.with_suffix('.report.txt'), target.with_suffix('.report.json')]
+    return save_files([target], [result.docx], source)
+
+
+def save_reports(result, destination, source):
+    """Сохраняет текстовый и JSON-отчёт отдельно от документа."""
+    target = Path(destination).expanduser().resolve()
+    if target.suffix.lower() != '.txt':
+        raise ValueError('Укажите имя отчёта с расширением .txt.')
+    return save_files([target, target.with_suffix('.json')],
+                      [result.report_text.encode('utf-8'), result.report_json.encode('utf-8')], source)
+
+
+def save_files(targets, payloads, source):
     if Path(source).resolve() in targets:
         raise ValueError('Нельзя записать результат поверх исходного PDF.')
     # Сначала подготовить все файлы; незавершённая запись не повреждает DOCX.
-    with tempfile.TemporaryDirectory(prefix='.mathpdf-save-', dir=target.parent) as tmp:
-        for index, payload in enumerate([result.docx, result.report_text.encode('utf-8'),
-                                        result.report_json.encode('utf-8')]):
+    with tempfile.TemporaryDirectory(prefix='.mathpdf-save-', dir=targets[0].parent) as tmp:
+        for index, payload in enumerate(payloads):
             Path(tmp, str(index)).write_bytes(payload)
         for index, path in enumerate(targets):
             os.replace(Path(tmp, str(index)), path)
@@ -89,8 +100,10 @@ class DesktopApp:
         actions.grid(row=6, column=0, columnspan=2, sticky='ew')
         self.convert_button = ttk.Button(actions, text='Конвертировать', command=self.start)
         self.convert_button.pack(side='left')
-        self.save_button = ttk.Button(actions, text='Сохранить DOCX и отчёты…', command=self.save, state='disabled')
+        self.save_button = ttk.Button(actions, text='Сохранить DOCX…', command=self.save, state='disabled')
         self.save_button.pack(side='left', padx=10)
+        self.report_button = ttk.Button(actions, text='Сохранить отчёты…', command=self.save_reports, state='disabled')
+        self.report_button.pack(side='left')
         self.status = tk.StringVar(value='Выберите PDF и режим конвертации.')
         ttk.Label(frame, textvariable=self.status, wraplength=780).grid(row=7, column=0, columnspan=2, sticky='ew', pady=10)
         self.progress = ttk.Progressbar(frame, maximum=100)
@@ -129,6 +142,7 @@ class DesktopApp:
         self.result = None
         self.result_source = None
         self.save_button.configure(state='disabled')
+        self.report_button.configure(state='disabled')
         self.progress['value'] = 0
         self.show_report('')
         self.status.set('Параметры изменены. Нажмите «Конвертировать».')
@@ -139,6 +153,7 @@ class DesktopApp:
             widget.configure(state='disabled' if value else 'normal')
         self.combo.configure(state='disabled' if value else 'readonly')
         self.save_button.configure(state='normal' if not value and self.result else 'disabled')
+        self.report_button.configure(state='normal' if not value and self.result else 'disabled')
 
     def start(self):
         if self.busy:
@@ -187,21 +202,33 @@ class DesktopApp:
     def save(self):
         if not self.result or self.busy:
             return
-        name = filedialog.asksaveasfilename(parent=self.root, title='Сохранить DOCX и отчёты',
+        name = filedialog.asksaveasfilename(parent=self.root, title='Сохранить DOCX',
                     initialfile=self.result_source.stem+'.docx', defaultextension='.docx',
                     filetypes=[('Документ Word', '*.docx')])
         if not name:
             return
         try:
-            target = Path(name)
-            reports = [target.with_suffix('.report.txt'), target.with_suffix('.report.json')]
-            if any(p.exists() for p in reports) and not messagebox.askyesno('Замена отчётов',
-                    'Рядом уже есть отчёты с этим именем. Заменить их?', parent=self.root):
-                return
-            paths = save_result(self.result, target, self.result_source)
-            self.status.set('Сохранено: '+str(paths[0])+'. Отчёты находятся рядом.')
+            paths = save_result(self.result, name, self.result_source)
+            self.status.set('Документ сохранён: '+str(paths[0]))
         except Exception as exc:
             messagebox.showerror('Не удалось сохранить', f'{exc}\nВыберите доступную папку и закройте файл в Word.', parent=self.root)
+
+    def save_reports(self):
+        if not self.result or self.busy:
+            return
+        name = filedialog.asksaveasfilename(parent=self.root, title='Сохранить отчёты TXT и JSON',
+                    initialfile=self.result_source.stem+'.report.txt', defaultextension='.txt',
+                    filetypes=[('Текстовый отчёт', '*.txt')])
+        if not name:
+            return
+        try:
+            if Path(name).with_suffix('.json').exists() and not messagebox.askyesno('Замена JSON-отчёта',
+                    'Рядом уже есть JSON-отчёт с этим именем. Заменить его?', parent=self.root):
+                return
+            paths = save_reports(self.result, name, self.result_source)
+            self.status.set('Отчёты сохранены: '+str(paths[0])+' и '+str(paths[1]))
+        except Exception as exc:
+            messagebox.showerror('Не удалось сохранить отчёты', str(exc), parent=self.root)
 
     def close(self):
         if self.busy:

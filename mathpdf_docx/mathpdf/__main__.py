@@ -17,7 +17,7 @@ def doctor(load_models=False, recognition=False):
         import tkinter
         data['tkinter']=f'Tcl/Tk {tkinter.TkVersion}; импорт успешен, открытие окна не проверялось'
     except ImportError:
-        data['tkinter']='не установлен; нужен Python с Tcl/Tk (см. README)'
+        data['tkinter']='не установлен; нужен Python с Tcl/Tk'
     data['models']='не загружались (это не проверка доступности весов)'
     if load_models:
         try:

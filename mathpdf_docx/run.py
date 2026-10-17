@@ -14,10 +14,10 @@ def main():
         launch()
     except ImportError as exc:
         print(f'Не удалось загрузить приложение: {exc}\nУстановите requirements.txt в выбранное окружение Python. '
-              'Если отсутствует tkinter, установите Python с Tcl/Tk (см. README).', file=sys.stderr)
+              'Если отсутствует tkinter, установите Python с Tcl/Tk.', file=sys.stderr)
         return 1
     except Exception as exc:
-        print(f'Не удалось открыть окно: {type(exc).__name__}: {exc}. См. README и команду python -m mathpdf doctor.', file=sys.stderr)
+        print(f'Не удалось открыть окно: {type(exc).__name__}: {exc}. Проверьте окружение командой python -m mathpdf doctor.', file=sys.stderr)
         return 1
     return 0
 

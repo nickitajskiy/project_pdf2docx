@@ -7,7 +7,7 @@ import time
 import tkinter as tk
 import pytest
 from docx import Document
-from mathpdf.desktop import DesktopApp, conversion_worker, save_result
+from mathpdf.desktop import DesktopApp, conversion_worker, save_result, save_reports
 from mathpdf.schema import Mode
 from test_converter import sample, FixtureEngine
 from mathpdf.converter import convert
@@ -44,6 +44,7 @@ def test_window_modes_idle_no_models(window,monkeypatch):
     window.mode.set(Mode.PAGES.value);window.change_mode()
     assert 'не редактируются' in window.help['text']
     assert str(window.save_button['state'])=='disabled'
+    assert str(window.report_button['state'])=='disabled'
     window.root.update()
 
 
@@ -79,9 +80,16 @@ def test_window_conversion_save_cancel_and_reports(window,sample,tmp_path,monkey
     target=tmp_path/'Результат с пробелами.docx'
     monkeypatch.setattr('mathpdf.desktop.filedialog.asksaveasfilename',lambda **kw:str(target))
     window.save()
-    assert target.exists() and target.with_suffix('.report.txt').exists()
-    assert json.loads(target.with_suffix('.report.json').read_text())['pages']==1
+    assert target.exists()
+    assert not target.with_suffix('.report.txt').exists()
+    assert not target.with_suffix('.report.json').exists()
     assert len(Document(target).inline_shapes)==1
+    report=tmp_path/'Отдельный отчёт.txt'
+    monkeypatch.setattr('mathpdf.desktop.filedialog.asksaveasfilename',lambda **kw:str(report))
+    window.save_reports()
+    assert report.read_text()==window.result.report_text
+    assert json.loads(report.with_suffix('.json').read_text())['pages']==1
+    assert not report.with_suffix('.docx').exists()
 
 
 def test_window_failure_allows_retry(window,sample,tmp_path,monkeypatch):
@@ -127,7 +135,33 @@ def test_changed_parameters_cannot_save_old_result(window,sample):
     assert window.result is not None
     window.mode.set(Mode.OMML.value);window.change_mode()
     assert window.result is None and str(window.save_button['state'])=='disabled'
+    assert str(window.report_button['state'])=='disabled'
     window.mode.set(Mode.PAGES.value);window.start();wait_done(window)
     assert window.result is not None
     window.source.set('другой.pdf')
     assert window.result is None and str(window.save_button['state'])=='disabled'
+    assert str(window.report_button['state'])=='disabled'
+
+
+def test_reports_can_be_saved_without_docx(sample,tmp_path):
+    result=convert(sample,Mode.PAGES)
+    target=tmp_path/'Только отчёт.txt'
+    saved=save_reports(result,target,sample)
+    assert saved==[target,target.with_suffix('.json')]
+    assert len(list(tmp_path.glob('*.docx')))==0
+    assert target.read_text()==result.report_text
+    with pytest.raises(ValueError):save_reports(result,sample,sample)
+
+
+def test_cancel_reports_keeps_result_and_does_not_write(window,sample,tmp_path,monkeypatch):
+    window.source.set(str(sample));window.mode.set(Mode.PAGES.value)
+    window.start();wait_done(window)
+    monkeypatch.setattr('mathpdf.desktop.filedialog.asksaveasfilename',lambda **kw:'')
+    before=set(tmp_path.iterdir())
+    window.save_reports()
+    assert window.result is not None and set(tmp_path.iterdir())==before
+    report=tmp_path/'Отчёт.txt';report.with_suffix('.json').write_text('previous')
+    monkeypatch.setattr('mathpdf.desktop.filedialog.asksaveasfilename',lambda **kw:str(report))
+    monkeypatch.setattr('mathpdf.desktop.messagebox.askyesno',lambda *a,**kw:False)
+    window.save_reports()
+    assert not report.exists() and report.with_suffix('.json').read_text()=='previous'
