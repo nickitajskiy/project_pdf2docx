@@ -30,7 +30,7 @@ class Pix2TextEngine:
     def __init__(self, recognition=False):
         try:
             # Явные пути позволяют работать без сетевого доступа после подготовки.
-            root = Path(os.environ.get('MATHPDF_MODEL_DIR', 'models')).resolve()
+            root = Path(os.environ.get('MATHPDF_MODEL_DIR', Path(__file__).resolve().parents[1]/'models')).resolve()
             root.mkdir(parents=True, exist_ok=True)
             os.environ.setdefault('HF_HOME',str(root / '.hf'))
             os.environ.setdefault('MPLCONFIGDIR',str(root / '.mpl'))

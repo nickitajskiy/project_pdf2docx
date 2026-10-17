@@ -10,9 +10,14 @@ from .schema import Mode, ConversionError
 
 def doctor(load_models=False, recognition=False):
     data={'python':sys.version.split()[0], 'pandoc':shutil.which('pandoc'), 'packages':{}}
-    for name in ['pdfplumber','pypdfium2','python-docx','streamlit','pix2text','transformers','optimum','cnstd']:
+    for name in ['pdfplumber','pypdfium2','python-docx','pix2text','transformers','optimum','cnstd']:
         try: data['packages'][name]=md.version(name)
         except md.PackageNotFoundError: data['packages'][name]='не установлен'
+    try:
+        import tkinter
+        data['tkinter']=f'Tcl/Tk {tkinter.TkVersion}; импорт успешен, открытие окна не проверялось'
+    except ImportError:
+        data['tkinter']='не установлен; нужен Python с Tcl/Tk (см. README)'
     data['models']='не загружались (это не проверка доступности весов)'
     if load_models:
         try:

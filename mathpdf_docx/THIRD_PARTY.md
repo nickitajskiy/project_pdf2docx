@@ -10,7 +10,7 @@
 | pypdfium2 | Apache-2.0 / BSD-3-Clause; PDFium и его зависимости имеют отдельные notices — https://github.com/pypdfium2-team/pypdfium2 |
 | python-docx | MIT — https://github.com/python-openxml/python-docx |
 | Pillow | MIT-CMU / HPND — https://github.com/python-pillow/Pillow |
-| Streamlit | Apache-2.0 — https://github.com/streamlit/streamlit |
+| Tkinter / Tcl/Tk | Tkinter входит в Python (PSF); Tcl/Tk — BSD-подобная лицензия, https://www.tcl-lang.org/software/tcltk/license.html |
 | Pix2Text | MIT — https://github.com/breezedeus/Pix2Text |
 | CnSTD / CnOCR | Apache-2.0 — https://github.com/breezedeus/CnSTD ; https://github.com/breezedeus/CnOCR |
 | Transformers / Optimum | Apache-2.0 — https://github.com/huggingface/transformers ; https://github.com/huggingface/optimum |

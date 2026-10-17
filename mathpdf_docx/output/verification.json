@@ -118,7 +118,6 @@
     "pdfplumber": "0.11.9",
     "pypdfium2": "5.14.0",
     "python-docx": "1.2.0",
-    "streamlit": "1.50.0",
     "pix2text": "1.1.4",
     "cnstd": "1.2.6",
     "cnocr": "2.3.1",
@@ -132,7 +131,7 @@
   },
   "platform": "macOS-27.0-arm64-arm-64bit",
   "python": "3.12.14",
-  "tests": "57 passed",
+  "tests": "65 passed",
   "syntax_python_311": "compileall passed; full dependency/runtime tests not run under 3.11",
   "editable_rendered_pages": 11,
   "omml_rendered_pages": 10,
@@ -142,5 +141,13 @@
     "mfr-1.5": "1cef9f0bdcd6a4c63df7de1311fb0894593340cc"
   },
   "omml_page5_rendered_pages": 1,
-  "regression_fixes": "output/regression-checks.json"
+  "regression_fixes": "output/regression-checks.json",
+  "interface": {
+    "type": "Tkinter",
+    "tcl_tk": "9.0",
+    "real_gui_tests": "passed on macOS ARM64, full suite no skips",
+    "clean_base_install": "requirements.txt installed into isolated venv; no Streamlit or Pix2Text; real Tk, 9-page PDF conversion, DOCX and reports saved",
+    "windows": "not run",
+    "visual_screenshot": "not verified; UI automation timed out locating Python window"
+  }
 }
